@@ -1,0 +1,55 @@
+{
+  "note": "가상 학부생 예시 데이터셋. scripts/make_examples.py로 다시 만들 수 있음.",
+  "personas": [
+    {
+      "persona_id": "p01_bio_lab",
+      "summary": "3학년 재학 · 생명과학 · 학부연구생 4개월 · 자기평가 약간 높음",
+      "goal": "kribb:35443#3 A-4 세포사멸 조절 단백질 삼차구조 규명 및 단백질 분해 기반 신약 개발",
+      "weeks_recorded": 8,
+      "cards": 4,
+      "goal_achievement": 0.67,
+      "scan_png": true,
+      "top_recommendation": "A-4 세포사멸 조절 단백질 삼차구조 규명 및 단백질 분해 기반 신약 개발"
+    },
+    {
+      "persona_id": "p02_ai_omics",
+      "summary": "4학년 졸업예정 · 컴퓨터공학+생명 복수전공 · 데이터 프로젝트 다수 · 자기평가 낮음",
+      "goal": "kribb:35443#4 A-5 AI 기반 다중오믹스 데이터 분석",
+      "weeks_recorded": 7,
+      "cards": 4,
+      "goal_achievement": 0.748,
+      "scan_png": true,
+      "top_recommendation": "A-5 AI 기반 다중오믹스 데이터 분석"
+    },
+    {
+      "persona_id": "p03_energy_h2",
+      "summary": "4학년 졸업예정 · 화학공학 · 전기화학 수업 위주 · 시간 여유 보통",
+      "goal": "kier:262563#13 수소 생산·저장 기술-4 (수소연구단)",
+      "weeks_recorded": 8,
+      "cards": 3,
+      "goal_achievement": 0.937,
+      "scan_png": true,
+      "top_recommendation": "연료전지-3 (수소연료전지연구실)"
+    },
+    {
+      "persona_id": "p04_mech_energy",
+      "summary": "4학년 졸업예정 · 기계공학 · 캡스톤 설계 · 자기평가 높음(근거보다 앞섬)",
+      "goal": "kier:262563#24 부하 추종형 분산발전 기술-1 (에너지융합시스템연구단)",
+      "weeks_recorded": 8,
+      "cards": 2,
+      "goal_achievement": 0.908,
+      "scan_png": true,
+      "top_recommendation": "에너지 다소비 기기 고효율화 기술-3 (에너지융합시스템)"
+    },
+    {
+      "persona_id": "p05_admin_comm",
+      "summary": "2학년 재학 · 미디어커뮤니케이션 · 동아리 홍보 · 주당 시간 적음 · 컨디션 기복",
+      "goal": "kist:18304#4 행정인턴(커뮤니케이션팀)",
+      "weeks_recorded": 7,
+      "cards": 2,
+      "goal_achievement": 0.702,
+      "scan_png": true,
+      "top_recommendation": "행정인턴(커뮤니케이션팀)"
+    }
+  ]
+}

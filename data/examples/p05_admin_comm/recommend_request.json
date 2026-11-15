@@ -1,0 +1,46 @@
+{
+  "profile": {
+    "status": "enrolled",
+    "interest_fields": [],
+    "regions": [
+      "서울"
+    ],
+    "style_share": {
+      "analyze": 0.1,
+      "make": 0.1,
+      "talk": 0.5,
+      "plan": 0.3
+    },
+    "weekly_hours": 3,
+    "include_admin": true
+  },
+  "cards": [
+    {
+      "id": "p05_admin_comm-c1",
+      "kind": "동아리",
+      "title": "과학 동아리 홍보 담당",
+      "actions": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를 분석해 다음 홍보방법을 정했다.",
+      "role": "홍보부장",
+      "period": "2025.03-2026.02",
+      "tools": [
+        "Canva",
+        "Instagram"
+      ],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p05_admin_comm-c2",
+      "kind": "수업",
+      "title": "미디어와 언론 수강",
+      "actions": "언론의 종류별 특성과 콘텐츠 유형별 특성을 배우는 전공 과목을 수강했다.",
+      "role": "",
+      "period": "",
+      "tools": [],
+      "outcome": "",
+      "learned": ""
+    }
+  ],
+  "top": 5,
+  "include_closed": true
+}

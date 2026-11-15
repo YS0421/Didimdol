@@ -1,0 +1,75 @@
+{
+  "profile": {
+    "status": "enrolled",
+    "interest_fields": [
+      "chem"
+    ],
+    "regions": [
+      "대전"
+    ],
+    "style_share": {
+      "analyze": 0.4,
+      "make": 0.4,
+      "talk": 0.1,
+      "plan": 0.1
+    },
+    "weekly_hours": 8,
+    "include_admin": false
+  },
+  "cards": [
+    {
+      "id": "p01_bio_lab-c1",
+      "kind": "수업",
+      "title": "생화학·분자생물학 수강",
+      "actions": "생화학, 분자생물학, 세포생물학 과목을 수강했다. 단백질 구조와 세포사멸 기전을 배웠다.",
+      "role": "",
+      "period": "2025.03-2025.12",
+      "tools": [
+        "SDS-PAGE"
+      ],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p01_bio_lab-c2",
+      "kind": "학부연구생",
+      "title": "세포배양 실험 보조",
+      "actions": "선배가 정한 프로토콜대로 세포배양을 하고 웨스턴 블롯으로 단백질 발현을 확인했다. 실험 결과를 연구노트에 정리했다.",
+      "role": "학부연구생",
+      "period": "2026.03-2026.06",
+      "tools": [
+        "세포배양",
+        "Western blot"
+      ],
+      "outcome": "연구노트 4개월분",
+      "learned": ""
+    },
+    {
+      "id": "p01_bio_lab-c3",
+      "kind": "수업 프로젝트",
+      "title": "분자생물학 실험 기말 프로젝트",
+      "actions": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분석해 보고서를 썼다.",
+      "role": "팀장",
+      "period": "2026.09-2026.12",
+      "tools": [
+        "PCR",
+        "전기영동"
+      ],
+      "outcome": "",
+      "learned": "조건을 바꾸면 결과가 어떻게 달라지는지 체계적으로 기록하는 법을 배웠다."
+    },
+    {
+      "id": "p01_bio_lab-c4",
+      "kind": "독학",
+      "title": "연구윤리 온라인 교육 이수",
+      "actions": "연구윤리정보센터 온라인 교육으로 연구윤리와 연구노트 작성 원칙을 공부했다.",
+      "role": "",
+      "period": "",
+      "tools": [],
+      "outcome": "",
+      "learned": ""
+    }
+  ],
+  "top": 5,
+  "include_closed": true
+}

@@ -1,0 +1,226 @@
+[
+  {
+    "uid": "kribb:35443",
+    "role_index": 4,
+    "title": "2026-3차 인턴연구원 채용 공고",
+    "institute": "한국생명공학연구원",
+    "role_name": "A-5 AI 기반 다중오믹스 데이터 분석",
+    "score": 0.915,
+    "bucket": "지금 도전할 자리",
+    "field_fit": 1.0,
+    "readiness": 0.862,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-10-23",
+    "url": "https://www.kribb.re.kr/kor/sub03/sub03_01_01_view.jsp?b_idx=35443",
+    "reasons": [
+      "관심 분야(AI데이터, 화학생명)와 이어져요",
+      "내 기록 2개가 요구 항목 6개와 연결돼요",
+      "마감 2026-10-23"
+    ],
+    "matches": [
+      {
+        "requirement": "유전체분석·기계학습 이론",
+        "card_id": "p02_ai_omics-c1",
+        "card_title": "머신러닝 수업 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "바이오인포매틱스 분석·데이터 처리",
+        "card_id": "p02_ai_omics-c3",
+        "card_title": "헬스케어 데이터 분석 공모전",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "AI·기계학습 기초 및 오믹스 이해",
+        "card_id": "p02_ai_omics-c1",
+        "card_title": "머신러닝 수업 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "Python 기초 프로그래밍",
+        "card_id": "p02_ai_omics-c1",
+        "card_title": "머신러닝 수업 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "AI·생명정보학 수강·프로젝트 경험",
+        "card_id": "p02_ai_omics-c1",
+        "card_title": "머신러닝 수업 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "프로그래밍 활용 경험",
+        "card_id": "p02_ai_omics-c1",
+        "card_title": "머신러닝 수업 프로젝트",
+        "level": 3,
+        "source": "추정"
+      }
+    ],
+    "gaps": []
+  },
+  {
+    "uid": "kribb:35276",
+    "role_index": 4,
+    "title": "2026-2차 인턴연구원 채용 공고",
+    "institute": "한국생명공학연구원",
+    "role_name": "A-6 인공지능 기반 유전체 분석",
+    "score": 0.87,
+    "bucket": "지금 도전할 자리",
+    "field_fit": 1.0,
+    "readiness": 0.75,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-07-03",
+    "url": "https://www.kribb.re.kr/kor/sub03/sub03_01_01_view.jsp?b_idx=35276",
+    "reasons": [
+      "관심 분야(AI데이터, 화학생명)와 이어져요",
+      "내 기록 2개가 요구 항목 2개와 연결돼요",
+      "마감 2026-07-03"
+    ],
+    "matches": [
+      {
+        "requirement": "유전체분석·기계학습 데이터 분석 이론",
+        "card_id": "p02_ai_omics-c1",
+        "card_title": "머신러닝 수업 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "바이오인포매틱스 분석 환경 및 데이터 처리",
+        "card_id": "p02_ai_omics-c2",
+        "card_title": "바이오인포매틱스 온라인 강의",
+        "level": 1,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "바이오인포매틱스 분석 환경 및 데이터 처리 (수준 1 → 2, 필수)"
+    ]
+  },
+  {
+    "uid": "kriss:63822",
+    "role_index": 3,
+    "title": "2026년 하반기 청년인턴 공개채용",
+    "institute": "한국표준과학연구원",
+    "role_name": "가스측정",
+    "score": 0.837,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.667,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-08-28",
+    "url": "https://www.kriss.re.kr/board.es?mid=a10502020000&bid=0006&act=view&list_no=63822",
+    "reasons": [
+      "관심 분야(화학생명)와 이어져요",
+      "내 기록 1개가 요구 항목 2개와 연결돼요",
+      "마감 2026-08-28"
+    ],
+    "matches": [
+      {
+        "requirement": "가스 분석·시료 전처리 기본 지식과 경험",
+        "card_id": "p02_ai_omics-c3",
+        "card_title": "헬스케어 데이터 분석 공모전",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "GC 등 분석 장비 운용 및 데이터 처리",
+        "card_id": "p02_ai_omics-c3",
+        "card_title": "헬스케어 데이터 분석 공모전",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "국가측정표준 체계 이해와 데이터 해석 (수준 0 → 1, 필수)"
+    ]
+  },
+  {
+    "uid": "kribb:35443",
+    "role_index": 19,
+    "title": "2026-3차 인턴연구원 채용 공고",
+    "institute": "한국생명공학연구원",
+    "role_name": "H-2 영장류 유전체 분석",
+    "score": 0.811,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.603,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-10-23",
+    "url": "https://www.kribb.re.kr/kor/sub03/sub03_01_01_view.jsp?b_idx=35443",
+    "reasons": [
+      "관심 분야(화학생명, AI데이터)와 이어져요",
+      "내 기록 2개가 요구 항목 3개와 연결돼요",
+      "마감 2026-10-23"
+    ],
+    "matches": [
+      {
+        "requirement": "영장류·의학적 데이터 분석 지식",
+        "card_id": "p02_ai_omics-c3",
+        "card_title": "헬스케어 데이터 분석 공모전",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "유전체 분석 생물정보학 기술",
+        "card_id": "p02_ai_omics-c2",
+        "card_title": "바이오인포매틱스 온라인 강의",
+        "level": 1,
+        "source": "추정"
+      },
+      {
+        "requirement": "유전체 분석 능력",
+        "card_id": "p02_ai_omics-c2",
+        "card_title": "바이오인포매틱스 온라인 강의",
+        "level": 1,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "유전체 분석 생물정보학 기술 (수준 1 → 2, 필수)",
+      "유전체 분석 능력 (수준 1 → 2, 우대)"
+    ]
+  },
+  {
+    "uid": "kier:262369",
+    "role_index": 1,
+    "title": "2026년 상반기 자체인턴 채용 공고 (2025. 12. 14.-2025. 12. 18.)",
+    "institute": "한국에너지기술연구원",
+    "role_name": "청정 연료 생산 및 자원 순환 기술-1 (머신러닝·Exergy 분석)",
+    "score": 0.792,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.667,
+    "style_fit": 0.5,
+    "apply_end_on": "2025-12-18",
+    "url": "https://www.kier.re.kr/board/view?linkId=262369&menuId=MENU00459",
+    "reasons": [
+      "관심 분야(화학생명, AI데이터)와 이어져요",
+      "내 기록 2개가 요구 항목 2개와 연결돼요",
+      "마감 2025-12-18"
+    ],
+    "matches": [
+      {
+        "requirement": "Matlab 코딩 및 데이터 분석",
+        "card_id": "p02_ai_omics-c3",
+        "card_title": "헬스케어 데이터 분석 공모전",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "머신러닝 이해",
+        "card_id": "p02_ai_omics-c1",
+        "card_title": "머신러닝 수업 프로젝트",
+        "level": 3,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "화학반응·열역학·분리기술 지식 (수준 0 → 1, 필수)"
+    ]
+  }
+]

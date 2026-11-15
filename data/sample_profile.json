@@ -1,0 +1,11 @@
+{
+  "note": "데모용 가상 학부생 프로필 (실존 인물 아님). 경험 카드는 sample_cards.json.",
+  "profile": {
+    "status": "expected",
+    "interest_fields": ["chem", "ai"],
+    "regions": [],
+    "style_share": {"analyze": 0.45, "make": 0.35, "talk": 0.1, "plan": 0.1},
+    "weekly_hours": 8,
+    "include_admin": false
+  }
+}

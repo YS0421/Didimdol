@@ -1,0 +1,22 @@
+{
+  "note": "가상 학부생 (실존 인물 아님)",
+  "persona_id": "p05_admin_comm",
+  "summary": "2학년 재학 · 미디어커뮤니케이션 · 동아리 홍보 · 주당 시간 적음 · 컨디션 기복",
+  "grade": "2학년",
+  "coach_tone": "praise",
+  "profile": {
+    "status": "enrolled",
+    "interest_fields": [],
+    "regions": [
+      "서울"
+    ],
+    "style_share": {
+      "analyze": 0.1,
+      "make": 0.1,
+      "talk": 0.5,
+      "plan": 0.3
+    },
+    "weekly_hours": 3,
+    "include_admin": true
+  }
+}

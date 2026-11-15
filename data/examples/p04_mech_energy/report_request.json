@@ -1,0 +1,439 @@
+{
+  "goal": {
+    "uid": "kier:262563",
+    "role_index": 24,
+    "weeks_left": 1,
+    "weekly_hours": 6
+  },
+  "history": [
+    {
+      "checkin": {
+        "week": "W1",
+        "self_ratings": {
+          "domain": 4,
+          "data": 5,
+          "communication": 5
+        },
+        "milestones": [],
+        "hours_spent": 6.1,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#24-0",
+          "level": 1,
+          "card_id": "p04_mech_energy-c1",
+          "quote": "열역학, 유체역학, 열전달 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kier:262563#24-1",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        },
+        {
+          "requirement_id": "kier:262563#24-2",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W2",
+        "self_ratings": {
+          "domain": 4,
+          "data": 5,
+          "communication": 5
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#24-3",
+            "title": "Python·Pytorch·PINN 써 보기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-3"
+          },
+          {
+            "milestone_id": "m-kier:262563#24-4",
+            "title": "전기·제어 기초 지식 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-4"
+          }
+        ],
+        "hours_spent": 6.2,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#24-0",
+          "level": 1,
+          "card_id": "p04_mech_energy-c1",
+          "quote": "열역학, 유체역학, 열전달 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kier:262563#24-1",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        },
+        {
+          "requirement_id": "kier:262563#24-2",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W3",
+        "self_ratings": {
+          "domain": 4,
+          "data": 5,
+          "communication": 5
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#24-3",
+            "title": "Python·Pytorch·PINN 써 보기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-3"
+          },
+          {
+            "milestone_id": "m-kier:262563#24-4",
+            "title": "전기·제어 기초 지식 핵심 개념 정리",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-4"
+          }
+        ],
+        "hours_spent": 2.8,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#24-0",
+          "level": 1,
+          "card_id": "p04_mech_energy-c1",
+          "quote": "열역학, 유체역학, 열전달 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kier:262563#24-1",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        },
+        {
+          "requirement_id": "kier:262563#24-2",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W4",
+        "self_ratings": {
+          "domain": 4,
+          "data": 4,
+          "communication": 5
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#24-3",
+            "title": "Python·Pytorch·PINN 써 보기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-3"
+          },
+          {
+            "milestone_id": "m-kier:262563#24-4",
+            "title": "전기·제어 기초 지식 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-4"
+          }
+        ],
+        "hours_spent": 6.5,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#24-0",
+          "level": 1,
+          "card_id": "p04_mech_energy-c1",
+          "quote": "열역학, 유체역학, 열전달 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kier:262563#24-1",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        },
+        {
+          "requirement_id": "kier:262563#24-2",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W5",
+        "self_ratings": {
+          "domain": 4,
+          "data": 4,
+          "communication": 5
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#24-3",
+            "title": "Python·Pytorch·PINN 써 보기",
+            "status": "on_hold",
+            "hold_reason": "external",
+            "consecutive_hold_weeks": 1,
+            "requirement_id": "kier:262563#24-3"
+          },
+          {
+            "milestone_id": "m-kier:262563#24-4",
+            "title": "전기·제어 기초 지식 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-4"
+          }
+        ],
+        "hours_spent": 5.4,
+        "condition": 5,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#24-0",
+          "level": 1,
+          "card_id": "p04_mech_energy-c1",
+          "quote": "열역학, 유체역학, 열전달 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kier:262563#24-1",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        },
+        {
+          "requirement_id": "kier:262563#24-2",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W6",
+        "self_ratings": {
+          "domain": 3,
+          "data": 4,
+          "communication": 5
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#24-3",
+            "title": "Python·Pytorch·PINN 써 보기",
+            "status": "on_hold",
+            "hold_reason": "unclear",
+            "consecutive_hold_weeks": 2,
+            "requirement_id": "kier:262563#24-3"
+          },
+          {
+            "milestone_id": "m-kier:262563#24-4",
+            "title": "전기·제어 기초 지식 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-4"
+          }
+        ],
+        "hours_spent": 3.1,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#24-0",
+          "level": 1,
+          "card_id": "p04_mech_energy-c1",
+          "quote": "열역학, 유체역학, 열전달 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kier:262563#24-1",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        },
+        {
+          "requirement_id": "kier:262563#24-2",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W7",
+        "self_ratings": {
+          "domain": 4,
+          "data": 4,
+          "communication": 5
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#24-3",
+            "title": "Python·Pytorch·PINN 써 보기",
+            "status": "on_hold",
+            "hold_reason": "motivation",
+            "consecutive_hold_weeks": 3,
+            "requirement_id": "kier:262563#24-3"
+          },
+          {
+            "milestone_id": "m-kier:262563#24-4",
+            "title": "전기·제어 기초 지식 핵심 개념 정리",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-4"
+          }
+        ],
+        "hours_spent": 6.3,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#24-0",
+          "level": 1,
+          "card_id": "p04_mech_energy-c1",
+          "quote": "열역학, 유체역학, 열전달 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kier:262563#24-1",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        },
+        {
+          "requirement_id": "kier:262563#24-2",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W8",
+        "self_ratings": {
+          "domain": 3,
+          "data": 4,
+          "communication": 5
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#24-3",
+            "title": "Python·Pytorch·PINN 써 보기",
+            "status": "on_hold",
+            "hold_reason": "time",
+            "consecutive_hold_weeks": 4,
+            "requirement_id": "kier:262563#24-3"
+          },
+          {
+            "milestone_id": "m-kier:262563#24-4",
+            "title": "전기·제어 기초 지식 핵심 개념 정리",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#24-4"
+          }
+        ],
+        "hours_spent": 4.8,
+        "condition": 3,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#24-0",
+          "level": 1,
+          "card_id": "p04_mech_energy-c1",
+          "quote": "열역학, 유체역학, 열전달 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kier:262563#24-1",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        },
+        {
+          "requirement_id": "kier:262563#24-2",
+          "level": 2,
+          "card_id": "p04_mech_energy-c2",
+          "quote": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "p04_mech_energy-c1",
+      "kind": "수업",
+      "title": "열역학·유체역학 수강",
+      "actions": "열역학, 유체역학, 열전달 과목을 수강했다.",
+      "role": "",
+      "period": "2024.03-2025.12",
+      "tools": [],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p04_mech_energy-c2",
+      "kind": "수업 프로젝트",
+      "title": "캡스톤 디자인",
+      "actions": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하고 열해석 결과를 보고서로 정리했다.",
+      "role": "설계 담당",
+      "period": "2026.03-2026.06",
+      "tools": [
+        "SolidWorks",
+        "ANSYS"
+      ],
+      "outcome": "캡스톤 경진대회 발표",
+      "learned": ""
+    }
+  ],
+  "style_share": {
+    "analyze": 0.2,
+    "make": 0.6,
+    "talk": 0.1,
+    "plan": 0.1
+  },
+  "mentoring": [],
+  "kind": "monthly",
+  "format": "json",
+  "with_feedback": false,
+  "coach_tone": "direct"
+}

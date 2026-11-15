@@ -1,0 +1,24 @@
+{
+  "note": "가상 학부생 (실존 인물 아님)",
+  "persona_id": "p01_bio_lab",
+  "summary": "3학년 재학 · 생명과학 · 학부연구생 4개월 · 자기평가 약간 높음",
+  "grade": "3학년",
+  "coach_tone": "balanced",
+  "profile": {
+    "status": "enrolled",
+    "interest_fields": [
+      "chem"
+    ],
+    "regions": [
+      "대전"
+    ],
+    "style_share": {
+      "analyze": 0.4,
+      "make": 0.4,
+      "talk": 0.1,
+      "plan": 0.1
+    },
+    "weekly_hours": 8,
+    "include_admin": false
+  }
+}

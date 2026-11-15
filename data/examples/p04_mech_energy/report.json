@@ -1,0 +1,525 @@
+{
+  "kind": "monthly",
+  "goal": {
+    "title": "부하 추종형 분산발전 기술-1 (에너지융합시스템연구단)",
+    "weeks_left": 1
+  },
+  "week": "W8",
+  "axis_names": {
+    "domain": "전공 지식",
+    "research": "연구·실험 수행",
+    "data": "데이터 분석·도구",
+    "problem": "문제해결",
+    "communication": "소통·문서화",
+    "collaboration": "협업·자기관리"
+  },
+  "axes": {
+    "domain": {
+      "target": 2.33,
+      "evidence": 2.33,
+      "self": 3,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 0.67
+    },
+    "research": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    },
+    "data": {
+      "target": 3.67,
+      "evidence": 2.78,
+      "self": 4,
+      "quadrant": "record_proof",
+      "gap_to_target": 0.89,
+      "self_minus_evidence": 1.22
+    },
+    "problem": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    },
+    "communication": {
+      "target": 3.67,
+      "evidence": 3.67,
+      "self": 5,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 1.33
+    },
+    "collaboration": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    }
+  },
+  "previous_axes": {
+    "domain": {
+      "target": 2.33,
+      "evidence": 2.33,
+      "self": 4,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 1.67
+    },
+    "research": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    },
+    "data": {
+      "target": 3.67,
+      "evidence": 2.78,
+      "self": 4,
+      "quadrant": "record_proof",
+      "gap_to_target": 0.89,
+      "self_minus_evidence": 1.22
+    },
+    "problem": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    },
+    "communication": {
+      "target": 3.67,
+      "evidence": 3.67,
+      "self": 5,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 1.33
+    },
+    "collaboration": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    }
+  },
+  "goal_progress": {
+    "achievement": 0.908,
+    "by_axis": {
+      "domain": 0.0,
+      "data": 0.89,
+      "communication": 0.0
+    }
+  },
+  "growth": {
+    "deltas": {
+      "domain": 0.0,
+      "data": 0.0,
+      "communication": 0.0
+    },
+    "most_grown": null,
+    "stalled": [
+      "data"
+    ]
+  },
+  "projected_weeks": {
+    "domain": 0,
+    "data": null,
+    "communication": 0
+  },
+  "next_actions": [
+    {
+      "requirement_id": "kier:262563#24-4",
+      "requirement_label": "전기·제어 기초 지식",
+      "title": "전기·제어 기초 지식 핵심 개념 정리",
+      "how": "관련 전공 강의 1~2개나 교재 한 장(chapter)을 골라 핵심 개념 5개를 내 말로 정리해요.",
+      "hours": 8.0,
+      "from_level": 0,
+      "to_level": 1,
+      "card_kind": "독학",
+      "source_quote": "전기 및 제어 관련 기초 지식",
+      "small_step": false
+    },
+    {
+      "requirement_id": "kier:262563#24-3",
+      "requirement_label": "Python·Pytorch·PINN",
+      "title": "Python·Pytorch·PINN — 이번 주 30분짜리 첫걸음",
+      "how": "관련 자료를 하나 찾아 읽고, 다음에 할 일을 한 줄로 적어요. 그것만 해도 이번 주는 충분해요.",
+      "hours": 0.5,
+      "from_level": 0,
+      "to_level": 0,
+      "card_kind": null,
+      "source_quote": "Python 및 Pytorch 기초 지식, PINN 개발 경력 우대",
+      "small_step": true
+    }
+  ],
+  "needs_adjustment": true,
+  "checklist": [],
+  "series": {
+    "weeks": [
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "evidence": {
+      "domain": [
+        2.33,
+        2.33,
+        2.33,
+        2.33,
+        2.33,
+        2.33,
+        2.33,
+        2.33
+      ],
+      "research": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "data": [
+        2.78,
+        2.78,
+        2.78,
+        2.78,
+        2.78,
+        2.78,
+        2.78,
+        2.78
+      ],
+      "problem": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "communication": [
+        3.67,
+        3.67,
+        3.67,
+        3.67,
+        3.67,
+        3.67,
+        3.67,
+        3.67
+      ],
+      "collaboration": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "self": {
+      "domain": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "research": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "data": [
+        5,
+        5,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "problem": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "communication": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "collaboration": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "targets": {
+      "domain": 2.33,
+      "research": null,
+      "data": 3.67,
+      "problem": null,
+      "communication": 3.67,
+      "collaboration": null
+    }
+  },
+  "self_awareness": {
+    "latest": {
+      "domain": 0.67,
+      "data": 1.22,
+      "communication": 1.33
+    },
+    "mean": {
+      "domain": 1.42,
+      "data": 1.59,
+      "communication": 1.33
+    },
+    "tendency": {
+      "domain": "과대평가 경향",
+      "data": "과대평가 경향",
+      "communication": "과대평가 경향"
+    }
+  },
+  "requirement_coverage": {
+    "counts": {
+      "충족": 3,
+      "없음": 2
+    },
+    "covered_ratio": 0.6,
+    "items": [
+      {
+        "id": "kier:262563#24-0",
+        "label": "열역학·유체역학 지식",
+        "required": 1,
+        "current": 1,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kier:262563#24-1",
+        "label": "열시스템 열해석 지식",
+        "required": 1,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kier:262563#24-2",
+        "label": "설계 소프트웨어·도면 작성",
+        "required": 2,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kier:262563#24-3",
+        "label": "Python·Pytorch·PINN",
+        "required": 2,
+        "current": 0,
+        "status": "없음",
+        "necessity": "preferred",
+        "checklist": false
+      },
+      {
+        "id": "kier:262563#24-4",
+        "label": "전기·제어 기초 지식",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      }
+    ]
+  },
+  "execution": {
+    "milestone_completion": 0.0,
+    "milestones_done": 0,
+    "milestones_total": 2,
+    "hold_reasons": {
+      "external": 1,
+      "unclear": 1,
+      "motivation": 1,
+      "time": 1
+    },
+    "avg_hours": 5.2,
+    "planned_hours": 6,
+    "hours_ratio": 0.86
+  },
+  "activity": {
+    "card_kinds": {
+      "수업": 1,
+      "수업 프로젝트": 1
+    },
+    "checkin_weeks": [
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "consistency": 1.0
+  },
+  "tech_stack": [
+    {
+      "tool": "ANSYS",
+      "count": 1,
+      "latest_period": "2026.03-2026.06"
+    },
+    {
+      "tool": "SolidWorks",
+      "count": 1,
+      "latest_period": "2026.03-2026.06"
+    }
+  ],
+  "style": {
+    "activity_share": {
+      "analyze": 0.2,
+      "make": 0.6,
+      "talk": 0.0,
+      "plan": 0.2
+    },
+    "self_share": {
+      "analyze": 0.2,
+      "make": 0.6,
+      "talk": 0.1,
+      "plan": 0.1
+    },
+    "alignment": 0.9
+  },
+  "strengths": [
+    {
+      "card_id": "p04_mech_energy-c2",
+      "title": "캡스톤 디자인",
+      "score": 4,
+      "keywords": [
+        "열시스템 열해석 지식",
+        "설계 소프트웨어·도면 작성"
+      ],
+      "quotes": [
+        "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하",
+        "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하"
+      ]
+    },
+    {
+      "card_id": "p04_mech_energy-c1",
+      "title": "열역학·유체역학 수강",
+      "score": 1,
+      "keywords": [
+        "열역학·유체역학 지식"
+      ],
+      "quotes": [
+        "열역학, 유체역학, 열전달 과목을 수강했다."
+      ]
+    }
+  ],
+  "mentoring": {
+    "asked": 0,
+    "answered": 0,
+    "followed_up": 0
+  },
+  "condition": {
+    "private": true,
+    "series": [
+      [
+        "W1",
+        4
+      ],
+      [
+        "W2",
+        4
+      ],
+      [
+        "W3",
+        4
+      ],
+      [
+        "W4",
+        4
+      ],
+      [
+        "W5",
+        5
+      ],
+      [
+        "W6",
+        4
+      ],
+      [
+        "W7",
+        4
+      ],
+      [
+        "W8",
+        3
+      ]
+    ],
+    "condition_vs_execution": 0.38
+  },
+  "feedback": [
+    {
+      "kind": "push",
+      "reason": "stuck_milestone",
+      "text": "'Python·Pytorch·PINN 써 보기'이(가) 4주째 멈춰 있어요. 이번 주에 끝낼 수 있는 크기로 쪼개 볼게요.",
+      "source": "template"
+    },
+    {
+      "kind": "encourage",
+      "reason": "stagnation",
+      "text": "이번 주는 숫자가 움직이지 않았어요. 다음 한 칸을 더 작게 나눠 볼까요?",
+      "source": "template"
+    }
+  ],
+  "healing": ""
+}

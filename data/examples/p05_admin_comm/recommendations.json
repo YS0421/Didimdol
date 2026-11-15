@@ -1,0 +1,119 @@
+[
+  {
+    "uid": "kist:18304",
+    "role_index": 4,
+    "title": "KIST 2026-5차 행정인턴 공개채용",
+    "institute": "한국과학기술연구원",
+    "role_name": "행정인턴(커뮤니케이션팀)",
+    "score": 0.5,
+    "bucket": "자격을 갖춘 뒤 목표로 삼을 자리",
+    "field_fit": 0.5,
+    "readiness": 0.388,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-09-11",
+    "url": "https://kist.re.kr/ko/notice/employment-announcement.do?mode=view&articleNo=18304",
+    "reasons": [
+      "내 기록 2개가 요구 항목 5개와 연결돼요",
+      "NCS 직무: PR/광고",
+      "마감 2026-09-11",
+      "지원 대상: 졸업예정자, 학사 졸업자 — 지금은 지원 시기가 아니에요"
+    ],
+    "matches": [
+      {
+        "requirement": "홍보물 트렌드 분석",
+        "card_id": "p05_admin_comm-c1",
+        "card_title": "과학 동아리 홍보 담당",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "콘텐츠 유형별 특성",
+        "card_id": "p05_admin_comm-c1",
+        "card_title": "과학 동아리 홍보 담당",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "언론의 종류별 특성",
+        "card_id": "p05_admin_comm-c2",
+        "card_title": "미디어와 언론 수강",
+        "level": 1,
+        "source": "추정"
+      },
+      {
+        "requirement": "결과 분석",
+        "card_id": "p05_admin_comm-c1",
+        "card_title": "과학 동아리 홍보 담당",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "홍보방법 선택",
+        "card_id": "p05_admin_comm-c1",
+        "card_title": "과학 동아리 홍보 담당",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "직무관련 경력 (수준 0 → 2, 우대)",
+      "기획력 (수준 0 → 1, 필수)",
+      "커뮤니케이션 방법 (수준 0 → 1, 필수)"
+    ]
+  },
+  {
+    "uid": "kist:18422",
+    "role_index": 0,
+    "title": "한국과학기술연구원 연수직(박사후연구원, 석사후연구원, 연구인턴) 추천선발 안내",
+    "institute": "한국과학기술연구원",
+    "role_name": "연구인턴",
+    "score": 0.395,
+    "bucket": "자격을 갖춘 뒤 목표로 삼을 자리",
+    "field_fit": 0.5,
+    "readiness": null,
+    "style_fit": 0.2,
+    "apply_end_on": "2027-12-31",
+    "url": "https://kist.re.kr/ko/notice/employment-announcement.do?mode=view&articleNo=18422",
+    "reasons": [
+      "공고에 구체적인 직무 요건이 없어 분야·성향으로만 골랐어요",
+      "마감 2027-12-31",
+      "지원 대상: 졸업예정자, 학사 졸업자 — 지금은 지원 시기가 아니에요"
+    ],
+    "matches": [],
+    "gaps": []
+  },
+  {
+    "uid": "kist:18542",
+    "role_index": 0,
+    "title": "KIST 2026-6차 행정인턴 공개채용",
+    "institute": "한국과학기술연구원",
+    "role_name": "행정인턴(학연운영팀)",
+    "score": 0.377,
+    "bucket": "자격을 갖춘 뒤 목표로 삼을 자리",
+    "field_fit": 0.5,
+    "readiness": 0.081,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-11-16",
+    "url": "https://kist.re.kr/ko/notice/employment-announcement.do?mode=view&articleNo=18542",
+    "reasons": [
+      "내 기록 1개가 요구 항목 1개와 연결돼요",
+      "NCS 직무: 경영기획, 사무행정",
+      "마감 2026-11-16",
+      "지원 대상: 졸업예정자, 학사 졸업자 — 지금은 지원 시기가 아니에요"
+    ],
+    "matches": [
+      {
+        "requirement": "홍보 매체 기획·관리 지식",
+        "card_id": "p05_admin_comm-c1",
+        "card_title": "과학 동아리 홍보 담당",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "학교 교육 이해 (수준 0 → 1, 필수)",
+      "외국어 능력 (수준 0 → 2, 필수)",
+      "사무 자동화 프로그램 (수준 0 → 2, 필수)"
+    ]
+  }
+]

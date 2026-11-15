@@ -1,0 +1,573 @@
+{
+  "goal": {
+    "uid": "kribb:35443",
+    "role_index": 4,
+    "weeks_left": 1,
+    "weekly_hours": 10
+  },
+  "history": [
+    {
+      "checkin": {
+        "week": "W1",
+        "self_ratings": {
+          "domain": 4,
+          "research": 4,
+          "data": 3,
+          "problem": 1,
+          "communication": 1,
+          "collaboration": 1
+        },
+        "milestones": [],
+        "hours_spent": 10.1,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#4-0",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-1",
+          "level": 1,
+          "card_id": "p02_ai_omics-c2",
+          "quote": "유전체분석과 오믹스 데이터 처리 기초를 온라인 강의로 공부했다."
+        },
+        {
+          "requirement_id": "kribb:35443#4-2",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-3",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-6",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-7",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W2",
+        "self_ratings": {
+          "domain": 4,
+          "research": 4,
+          "data": 3,
+          "problem": 1,
+          "communication": 1,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#4-1",
+            "title": "바이오인포매틱스 분석·데이터 처리 미니 분석 프로젝트",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-1"
+          },
+          {
+            "milestone_id": "m-kribb:35443#4-9",
+            "title": "의사소통능력 양식 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-9"
+          }
+        ],
+        "hours_spent": 7.5,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#4-0",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-1",
+          "level": 2,
+          "card_id": "p02_ai_omics-c3",
+          "quote": "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만"
+        },
+        {
+          "requirement_id": "kribb:35443#4-2",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-3",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-6",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-7",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W3",
+        "self_ratings": {
+          "domain": 4,
+          "research": 4,
+          "data": 4,
+          "problem": 1,
+          "communication": 1,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#4-9",
+            "title": "의사소통능력 양식 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-9"
+          },
+          {
+            "milestone_id": "m-kribb:35443#4-10",
+            "title": "수리능력 기초 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-10"
+          }
+        ],
+        "hours_spent": 8.2,
+        "condition": 3,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#4-0",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-1",
+          "level": 2,
+          "card_id": "p02_ai_omics-c3",
+          "quote": "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만"
+        },
+        {
+          "requirement_id": "kribb:35443#4-2",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-3",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-6",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-7",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W4",
+        "self_ratings": {
+          "domain": 4,
+          "research": 4,
+          "data": 3,
+          "problem": 1,
+          "communication": 1,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#4-9",
+            "title": "의사소통능력 양식 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-9"
+          },
+          {
+            "milestone_id": "m-kribb:35443#4-10",
+            "title": "수리능력 기초 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-10"
+          }
+        ],
+        "hours_spent": 7.3,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#4-0",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-1",
+          "level": 2,
+          "card_id": "p02_ai_omics-c3",
+          "quote": "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만"
+        },
+        {
+          "requirement_id": "kribb:35443#4-2",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-3",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-6",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-7",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W6",
+        "self_ratings": {
+          "domain": 4,
+          "research": 4,
+          "data": 3,
+          "problem": 1,
+          "communication": 1,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#4-9",
+            "title": "의사소통능력 양식 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-9"
+          },
+          {
+            "milestone_id": "m-kribb:35443#4-10",
+            "title": "수리능력 기초 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-10"
+          }
+        ],
+        "hours_spent": 6.2,
+        "condition": 4,
+        "missed_previous_week": true
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#4-0",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-1",
+          "level": 2,
+          "card_id": "p02_ai_omics-c3",
+          "quote": "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만"
+        },
+        {
+          "requirement_id": "kribb:35443#4-2",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-3",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-6",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-7",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W7",
+        "self_ratings": {
+          "domain": 4,
+          "research": 4,
+          "data": 3,
+          "problem": 1,
+          "communication": 1,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#4-9",
+            "title": "의사소통능력 양식 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-9"
+          },
+          {
+            "milestone_id": "m-kribb:35443#4-10",
+            "title": "수리능력 기초 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-10"
+          }
+        ],
+        "hours_spent": 4.5,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#4-0",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-1",
+          "level": 2,
+          "card_id": "p02_ai_omics-c3",
+          "quote": "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만"
+        },
+        {
+          "requirement_id": "kribb:35443#4-2",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-3",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-6",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-7",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W8",
+        "self_ratings": {
+          "domain": 4,
+          "research": 4,
+          "data": 3,
+          "problem": 1,
+          "communication": 1,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#4-9",
+            "title": "의사소통능력 양식 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-9"
+          },
+          {
+            "milestone_id": "m-kribb:35443#4-10",
+            "title": "수리능력 기초 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#4-10"
+          }
+        ],
+        "hours_spent": 8.8,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#4-0",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-1",
+          "level": 2,
+          "card_id": "p02_ai_omics-c3",
+          "quote": "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만"
+        },
+        {
+          "requirement_id": "kribb:35443#4-2",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-3",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-6",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        },
+        {
+          "requirement_id": "kribb:35443#4-7",
+          "level": 3,
+          "card_id": "p02_ai_omics-c1",
+          "quote": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "p02_ai_omics-c1",
+      "kind": "수업 프로젝트",
+      "title": "머신러닝 수업 프로젝트",
+      "actions": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 scikit-learn으로 직접 설계하고 학습시켰다. 기계학습 모델의 성능을 교차검증으로 비교했다.",
+      "role": "팀장",
+      "period": "2025.09-2025.12",
+      "tools": [
+        "Python",
+        "scikit-learn",
+        "pandas"
+      ],
+      "outcome": "기말 발표",
+      "learned": ""
+    },
+    {
+      "id": "p02_ai_omics-c2",
+      "kind": "독학",
+      "title": "바이오인포매틱스 온라인 강의",
+      "actions": "유전체분석과 오믹스 데이터 처리 기초를 온라인 강의로 공부했다.",
+      "role": "",
+      "period": "",
+      "tools": [
+        "R"
+      ],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p02_ai_omics-c3",
+      "kind": "공모전",
+      "title": "헬스케어 데이터 분석 공모전",
+      "actions": "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만들었다. 팀 보고서의 데이터 분석 파트를 작성했다.",
+      "role": "데이터 분석 담당",
+      "period": "2026.07-2026.08",
+      "tools": [
+        "Python",
+        "matplotlib"
+      ],
+      "outcome": "장려상",
+      "learned": ""
+    },
+    {
+      "id": "p02_ai_omics-c4",
+      "kind": "독학",
+      "title": "생명정보학 미니 프로젝트",
+      "actions": "공개 RNA-seq 데이터로 차등발현 유전자 분석을 스스로 기획해 수행하고 결과를 블로그에 정리했다.",
+      "role": "",
+      "period": "",
+      "tools": [
+        "Python",
+        "DESeq2"
+      ],
+      "outcome": "",
+      "learned": "오믹스 데이터 정규화가 결과를 크게 바꾼다."
+    }
+  ],
+  "style_share": {
+    "analyze": 0.6,
+    "make": 0.2,
+    "talk": 0.1,
+    "plan": 0.1
+  },
+  "mentoring": [
+    {
+      "week": "W3",
+      "question": "AI 직무 인턴 면접에서 프로젝트를 어떻게 설명하면 좋을까요?",
+      "answered": true,
+      "followed_up": true
+    }
+  ],
+  "kind": "monthly",
+  "format": "json",
+  "with_feedback": false,
+  "coach_tone": "praise"
+}

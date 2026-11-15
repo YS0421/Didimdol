@@ -1,0 +1,204 @@
+[
+  {
+    "uid": "kribb:35443",
+    "role_index": 3,
+    "title": "2026-3차 인턴연구원 채용 공고",
+    "institute": "한국생명공학연구원",
+    "role_name": "A-4 세포사멸 조절 단백질 삼차구조 규명 및 단백질 분해 기반 신약 개발",
+    "score": 0.934,
+    "bucket": "자격을 갖춘 뒤 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.909,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-10-23",
+    "url": "https://www.kribb.re.kr/kor/sub03/sub03_01_01_view.jsp?b_idx=35443",
+    "reasons": [
+      "관심 분야(화학생명)와 이어져요",
+      "내 기록 1개가 요구 항목 4개와 연결돼요",
+      "마감 2026-10-23",
+      "지원 대상: 졸업예정자, 학사 졸업자 — 지금은 지원 시기가 아니에요"
+    ],
+    "matches": [
+      {
+        "requirement": "생화학/분자생물학 지식",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "생화학/분자생물학 실험 기술",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "분자·세포생물학, 생화학 지식",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "세포배양·분자생물학 기본 실험기술",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      }
+    ],
+    "gaps": []
+  },
+  {
+    "uid": "kribb:35276",
+    "role_index": 14,
+    "title": "2026-2차 인턴연구원 채용 공고",
+    "institute": "한국생명공학연구원",
+    "role_name": "E-2 페롭토시스 기반 세포 노화 연구",
+    "score": 0.856,
+    "bucket": "자격을 갖춘 뒤 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.714,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-07-03",
+    "url": "https://www.kribb.re.kr/kor/sub03/sub03_01_01_view.jsp?b_idx=35276",
+    "reasons": [
+      "관심 분야(화학생명)와 이어져요",
+      "내 기록 1개가 요구 항목 1개와 연결돼요",
+      "마감 2026-07-03",
+      "지원 대상: 졸업예정자, 학사 졸업자 — 지금은 지원 시기가 아니에요"
+    ],
+    "matches": [
+      {
+        "requirement": "생화학·분자생물학 기본지식 및 분자기전 연구 관심",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      }
+    ],
+    "gaps": []
+  },
+  {
+    "uid": "kribb:35443",
+    "role_index": 2,
+    "title": "2026-3차 인턴연구원 채용 공고",
+    "institute": "한국생명공학연구원",
+    "role_name": "A-3 차세대 치료용 항체 개발 플랫폼 기술, 질환 세포 제작 및 항체 유효성 평가",
+    "score": 0.843,
+    "bucket": "자격을 갖춘 뒤 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.682,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-10-23",
+    "url": "https://www.kribb.re.kr/kor/sub03/sub03_01_01_view.jsp?b_idx=35443",
+    "reasons": [
+      "관심 분야(화학생명)와 이어져요",
+      "내 기록 2개가 요구 항목 3개와 연결돼요",
+      "마감 2026-10-23",
+      "지원 대상: 졸업예정자, 학사 졸업자 — 지금은 지원 시기가 아니에요"
+    ],
+    "matches": [
+      {
+        "requirement": "분자세포생물학·항체·단백질공학 지식",
+        "card_id": "p01_bio_lab-c1",
+        "card_title": "생화학·분자생물학 수강",
+        "level": 1,
+        "source": "추정"
+      },
+      {
+        "requirement": "생물학·축산학 지식",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "분자세포생물학 실험 기술",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "학부 수준 이상의 실험 기술 (수준 0 → 2, 필수)"
+    ]
+  },
+  {
+    "uid": "kiom:20233",
+    "role_index": 4,
+    "title": "2026년 하반기 인턴 채용 공고",
+    "institute": "한국한의학연구원",
+    "role_name": "한의기술응용 업무지원 (A5)",
+    "score": 0.814,
+    "bucket": "자격을 갖춘 뒤 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.61,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-11-17",
+    "url": "https://kiom.re.kr/board.es?mid=a10503020000&bid=0038&act=view&list_no=20233",
+    "reasons": [
+      "관심 분야(화학생명)와 이어져요",
+      "내 기록 2개가 요구 항목 3개와 연결돼요",
+      "NCS 직무: 예방의학, 병리학",
+      "마감 2026-11-17",
+      "지원 대상: 학사 졸업자 — 지금은 지원 시기가 아니에요"
+    ],
+    "matches": [
+      {
+        "requirement": "생물학 관련 지식",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "실험 결과 분석 능력",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      },
+      {
+        "requirement": "세포 및 동물실험 경험",
+        "card_id": "p01_bio_lab-c2",
+        "card_title": "세포배양 실험 보조",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": []
+  },
+  {
+    "uid": "kiom:20233",
+    "role_index": 6,
+    "title": "2026년 하반기 인턴 채용 공고",
+    "institute": "한국한의학연구원",
+    "role_name": "한약자원 유전자 감별 분석 연구 보조 (A7)",
+    "score": 0.792,
+    "bucket": "자격을 갖춘 뒤 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.556,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-11-17",
+    "url": "https://kiom.re.kr/board.es?mid=a10503020000&bid=0038&act=view&list_no=20233",
+    "reasons": [
+      "관심 분야(화학생명)와 이어져요",
+      "내 기록 1개가 요구 항목 1개와 연결돼요",
+      "마감 2026-11-17",
+      "지원 대상: 학사 졸업자 — 지금은 지원 시기가 아니에요"
+    ],
+    "matches": [
+      {
+        "requirement": "생물학·분자생물학 실험 지식",
+        "card_id": "p01_bio_lab-c3",
+        "card_title": "분자생물학 실험 기말 프로젝트",
+        "level": 3,
+        "source": "추정"
+      }
+    ],
+    "gaps": []
+  }
+]

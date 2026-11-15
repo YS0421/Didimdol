@@ -1,0 +1,32 @@
+{
+  "note": "added_week: 이 주 체크인 때 기록한 카드 (0 = 시작 전부터 있던 기록)",
+  "cards": [
+    {
+      "id": "p04_mech_energy-c1",
+      "kind": "수업",
+      "title": "열역학·유체역학 수강",
+      "actions": "열역학, 유체역학, 열전달 과목을 수강했다.",
+      "role": "",
+      "period": "2024.03-2025.12",
+      "tools": [],
+      "outcome": "",
+      "learned": "",
+      "added_week": 0
+    },
+    {
+      "id": "p04_mech_energy-c2",
+      "kind": "수업 프로젝트",
+      "title": "캡스톤 디자인",
+      "actions": "소형 열교환기 시제품의 설계 도면을 CAD 설계 소프트웨어로 직접 작성하고 열해석 결과를 보고서로 정리했다.",
+      "role": "설계 담당",
+      "period": "2026.03-2026.06",
+      "tools": [
+        "SolidWorks",
+        "ANSYS"
+      ],
+      "outcome": "캡스톤 경진대회 발표",
+      "learned": "",
+      "added_week": 0
+    }
+  ]
+}

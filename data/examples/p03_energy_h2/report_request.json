@@ -1,0 +1,457 @@
+{
+  "goal": {
+    "uid": "kier:262563",
+    "role_index": 13,
+    "weeks_left": 2,
+    "weekly_hours": 6
+  },
+  "history": [
+    {
+      "checkin": {
+        "week": "W1",
+        "self_ratings": {
+          "domain": 3,
+          "research": 2,
+          "data": 3
+        },
+        "milestones": [],
+        "hours_spent": 5.2,
+        "condition": 3,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#13-0",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        },
+        {
+          "requirement_id": "kier:262563#13-3",
+          "level": 1,
+          "card_id": "p03_energy_h2-c1",
+          "quote": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+        },
+        {
+          "requirement_id": "kier:262563#13-4",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W2",
+        "self_ratings": {
+          "domain": 3,
+          "research": 2,
+          "data": 4
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#13-1",
+            "title": "세라믹 합성 기술 절차 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-1"
+          },
+          {
+            "milestone_id": "m-kier:262563#13-2",
+            "title": "박막 제조 공정 절차 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-2"
+          }
+        ],
+        "hours_spent": 7.1,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#13-0",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        },
+        {
+          "requirement_id": "kier:262563#13-3",
+          "level": 1,
+          "card_id": "p03_energy_h2-c1",
+          "quote": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+        },
+        {
+          "requirement_id": "kier:262563#13-4",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W3",
+        "self_ratings": {
+          "domain": 3,
+          "research": 2,
+          "data": 4
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#13-1",
+            "title": "세라믹 합성 기술 절차 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-1"
+          },
+          {
+            "milestone_id": "m-kier:262563#13-2",
+            "title": "박막 제조 공정 절차 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-2"
+          }
+        ],
+        "hours_spent": 6.2,
+        "condition": 3,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#13-0",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        },
+        {
+          "requirement_id": "kier:262563#13-3",
+          "level": 1,
+          "card_id": "p03_energy_h2-c1",
+          "quote": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+        },
+        {
+          "requirement_id": "kier:262563#13-4",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W4",
+        "self_ratings": {
+          "domain": 3,
+          "research": 2,
+          "data": 4
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#13-1",
+            "title": "세라믹 합성 기술 절차 익히기",
+            "status": "on_hold",
+            "hold_reason": "time",
+            "consecutive_hold_weeks": 1,
+            "requirement_id": "kier:262563#13-1"
+          },
+          {
+            "milestone_id": "m-kier:262563#13-2",
+            "title": "박막 제조 공정 절차 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-2"
+          }
+        ],
+        "hours_spent": 5.9,
+        "condition": 5,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#13-0",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        },
+        {
+          "requirement_id": "kier:262563#13-3",
+          "level": 1,
+          "card_id": "p03_energy_h2-c1",
+          "quote": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+        },
+        {
+          "requirement_id": "kier:262563#13-4",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W5",
+        "self_ratings": {
+          "domain": 3,
+          "research": 1,
+          "data": 4
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#13-1",
+            "title": "세라믹 합성 기술 절차 익히기",
+            "status": "on_hold",
+            "hold_reason": "external",
+            "consecutive_hold_weeks": 2,
+            "requirement_id": "kier:262563#13-1"
+          },
+          {
+            "milestone_id": "m-kier:262563#13-2",
+            "title": "박막 제조 공정 절차 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-2"
+          }
+        ],
+        "hours_spent": 3.5,
+        "condition": 3,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#13-0",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        },
+        {
+          "requirement_id": "kier:262563#13-3",
+          "level": 1,
+          "card_id": "p03_energy_h2-c1",
+          "quote": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+        },
+        {
+          "requirement_id": "kier:262563#13-4",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W6",
+        "self_ratings": {
+          "domain": 3,
+          "research": 2,
+          "data": 3
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#13-1",
+            "title": "세라믹 합성 기술 절차 익히기",
+            "status": "on_hold",
+            "hold_reason": "unclear",
+            "consecutive_hold_weeks": 3,
+            "requirement_id": "kier:262563#13-1"
+          },
+          {
+            "milestone_id": "m-kier:262563#13-2",
+            "title": "박막 제조 공정 절차 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-2"
+          }
+        ],
+        "hours_spent": 6.3,
+        "condition": 2,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#13-0",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        },
+        {
+          "requirement_id": "kier:262563#13-3",
+          "level": 1,
+          "card_id": "p03_energy_h2-c1",
+          "quote": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+        },
+        {
+          "requirement_id": "kier:262563#13-4",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W7",
+        "self_ratings": {
+          "domain": 3,
+          "research": 2,
+          "data": 4
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#13-1",
+            "title": "세라믹 합성 기술 절차 익히기",
+            "status": "on_hold",
+            "hold_reason": "motivation",
+            "consecutive_hold_weeks": 4,
+            "requirement_id": "kier:262563#13-1"
+          },
+          {
+            "milestone_id": "m-kier:262563#13-2",
+            "title": "박막 제조 공정 절차 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-2"
+          }
+        ],
+        "hours_spent": 3.4,
+        "condition": 2,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#13-0",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        },
+        {
+          "requirement_id": "kier:262563#13-3",
+          "level": 1,
+          "card_id": "p03_energy_h2-c1",
+          "quote": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+        },
+        {
+          "requirement_id": "kier:262563#13-4",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W8",
+        "self_ratings": {
+          "domain": 3,
+          "research": 2,
+          "data": 3
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kier:262563#13-1",
+            "title": "세라믹 합성 기술 절차 익히기",
+            "status": "on_hold",
+            "hold_reason": "time",
+            "consecutive_hold_weeks": 5,
+            "requirement_id": "kier:262563#13-1"
+          },
+          {
+            "milestone_id": "m-kier:262563#13-2",
+            "title": "박막 제조 공정 절차 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kier:262563#13-2"
+          }
+        ],
+        "hours_spent": 7.1,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kier:262563#13-0",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        },
+        {
+          "requirement_id": "kier:262563#13-3",
+          "level": 1,
+          "card_id": "p03_energy_h2-c1",
+          "quote": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+        },
+        {
+          "requirement_id": "kier:262563#13-4",
+          "level": 2,
+          "card_id": "p03_energy_h2-c2",
+          "quote": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "p03_energy_h2-c1",
+      "kind": "수업",
+      "title": "전기화학 수강",
+      "actions": "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다.",
+      "role": "",
+      "period": "2026.03-2026.06",
+      "tools": [],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p03_energy_h2-c2",
+      "kind": "수업 프로젝트",
+      "title": "전기화학 실험 수업",
+      "actions": "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로 정리했다.",
+      "role": "",
+      "period": "2026.03-2026.06",
+      "tools": [
+        "CV",
+        "Excel"
+      ],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p03_energy_h2-c3",
+      "kind": "독학",
+      "title": "수소 생산 기술 자료 정리",
+      "actions": "수소 생산과 수전해 방식별 특징을 논문 리뷰로 공부하고 요약 노트를 만들었다.",
+      "role": "",
+      "period": "",
+      "tools": [],
+      "outcome": "",
+      "learned": ""
+    }
+  ],
+  "style_share": {
+    "analyze": 0.3,
+    "make": 0.5,
+    "talk": 0.1,
+    "plan": 0.1
+  },
+  "mentoring": [
+    {
+      "week": "W1",
+      "question": "세라믹 합성 경험이 없는데 지원해도 될까요?",
+      "answered": true,
+      "followed_up": true
+    }
+  ],
+  "kind": "monthly",
+  "format": "json",
+  "with_feedback": false,
+  "coach_tone": "direct"
+}

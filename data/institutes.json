@@ -1,0 +1,195 @@
+{
+  "note": "수집 대상 기관 화이트리스트. adapter가 있는 기관만 수집한다. fields는 기관 기본 분야(공고별 분야는 AI 분류로 보정). blocked는 robots.txt 등으로 수집하지 않는 기관. pending은 robots상 허용이지만 게시판 구조 확인이 더 필요한 기관.",
+  "institutes": [
+    {
+      "code": "kict",
+      "name": "한국건설기술연구원",
+      "region": "고양",
+      "fields": [
+        "infra"
+      ],
+      "adapter": "kict"
+    },
+    {
+      "code": "kist",
+      "name": "한국과학기술연구원",
+      "region": "서울",
+      "fields": [
+        "chem",
+        "material",
+        "ai"
+      ],
+      "adapter": "kist"
+    },
+    {
+      "code": "kiom",
+      "name": "한국한의학연구원",
+      "region": "대전",
+      "fields": [
+        "chem"
+      ],
+      "adapter": "kiom"
+    },
+    {
+      "code": "kribb",
+      "name": "한국생명공학연구원",
+      "region": "대전",
+      "fields": [
+        "chem"
+      ],
+      "adapter": "kribb"
+    },
+    {
+      "code": "kier",
+      "name": "한국에너지기술연구원",
+      "region": "대전",
+      "fields": [
+        "energy"
+      ],
+      "adapter": "kier"
+    },
+    {
+      "code": "kriss",
+      "name": "한국표준과학연구원",
+      "region": "대전",
+      "fields": [
+        "elec",
+        "material",
+        "chem"
+      ],
+      "adapter": "kriss"
+    },
+    {
+      "code": "kfe",
+      "name": "한국핵융합에너지연구원",
+      "region": "대전",
+      "fields": [
+        "energy",
+        "mech"
+      ],
+      "adapter": "kfe"
+    },
+    {
+      "code": "kigam",
+      "name": "한국지질자원연구원",
+      "region": "대전",
+      "fields": [
+        "energy",
+        "infra"
+      ],
+      "adapter": "kigam"
+    },
+    {
+      "code": "kaeri",
+      "name": "한국원자력연구원",
+      "region": "대전",
+      "fields": [
+        "energy",
+        "material"
+      ],
+      "adapter": "kaeri"
+    },
+    {
+      "code": "kimm",
+      "name": "한국기계연구원",
+      "region": "대전",
+      "fields": [
+        "mech"
+      ],
+      "adapter": "kimm"
+    },
+    {
+      "code": "kims",
+      "name": "한국재료연구원",
+      "region": "창원",
+      "fields": [
+        "material"
+      ],
+      "adapter": "kims"
+    },
+    {
+      "code": "krri",
+      "name": "한국철도기술연구원",
+      "region": "의왕",
+      "fields": [
+        "mech",
+        "infra",
+        "elec"
+      ],
+      "adapter": "krri"
+    },
+    {
+      "code": "kfri",
+      "name": "한국식품연구원",
+      "region": "완주",
+      "fields": [
+        "chem"
+      ],
+      "adapter": "kfri"
+    }
+  ],
+  "blocked": [
+    {
+      "code": "krict",
+      "name": "한국화학연구원",
+      "reason": "robots.txt가 일반 수집기 전체 금지(Disallow: /). 잡알리오 등 다른 경로나 기관 협조 필요."
+    },
+    {
+      "code": "kit",
+      "name": "안전성평가연구소",
+      "reason": "robots.txt가 검색엔진 외 수집기 전체 금지(User-agent: * Disallow: /)."
+    },
+    {
+      "code": "kopri",
+      "name": "극지연구소",
+      "reason": "robots.txt가 검색엔진 외 수집기 전체 금지(User-agent: * Disallow: /)."
+    }
+  ],
+  "pending": [
+    {
+      "code": "kitech",
+      "name": "한국생산기술연구원",
+      "reason": "공고 상세가 외부 채용 사이트(recruit.kitech.re.kr)에 있음. 해당 사이트 robots·구조 확인 후 추가."
+    },
+    {
+      "code": "kasi",
+      "name": "한국천문연구원",
+      "reason": "채용 목록을 자바스크립트로 불러옴. 데이터 API 확인 필요."
+    },
+    {
+      "code": "etri",
+      "name": "한국전자통신연구원",
+      "reason": "홈페이지에서 채용 게시판 링크를 찾지 못함(별도 채용 사이트 가능성)."
+    },
+    {
+      "code": "kari",
+      "name": "한국항공우주연구원",
+      "reason": "홈페이지 응답 500. 채용 게시판 위치 확인 필요."
+    },
+    {
+      "code": "kbsi",
+      "name": "한국기초과학지원연구원",
+      "reason": "홈페이지에서 채용 게시판 링크를 찾지 못함."
+    },
+    {
+      "code": "wikim",
+      "name": "세계김치연구소",
+      "reason": "홈페이지에서 채용 게시판 링크를 찾지 못함."
+    },
+    {
+      "code": "kisti",
+      "name": "한국과학기술정보연구원",
+      "reason": "접속 시간 초과."
+    },
+    {
+      "code": "keri",
+      "name": "한국전기연구원",
+      "reason": "SSL 인증서 오류로 접속 실패."
+    },
+    {
+      "code": "nsr",
+      "name": "국가보안기술연구소",
+      "reason": "접속 실패."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "profile": {
+    "status": "expected",
+    "interest_fields": [
+      "ai",
+      "it",
+      "chem"
+    ],
+    "regions": [],
+    "style_share": {
+      "analyze": 0.6,
+      "make": 0.2,
+      "talk": 0.1,
+      "plan": 0.1
+    },
+    "weekly_hours": 10,
+    "include_admin": false
+  },
+  "cards": [
+    {
+      "id": "p02_ai_omics-c1",
+      "kind": "수업 프로젝트",
+      "title": "머신러닝 수업 프로젝트",
+      "actions": "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 scikit-learn으로 직접 설계하고 학습시켰다. 기계학습 모델의 성능을 교차검증으로 비교했다.",
+      "role": "팀장",
+      "period": "2025.09-2025.12",
+      "tools": [
+        "Python",
+        "scikit-learn",
+        "pandas"
+      ],
+      "outcome": "기말 발표",
+      "learned": ""
+    },
+    {
+      "id": "p02_ai_omics-c2",
+      "kind": "독학",
+      "title": "바이오인포매틱스 온라인 강의",
+      "actions": "유전체분석과 오믹스 데이터 처리 기초를 온라인 강의로 공부했다.",
+      "role": "",
+      "period": "",
+      "tools": [
+        "R"
+      ],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p02_ai_omics-c3",
+      "kind": "공모전",
+      "title": "헬스케어 데이터 분석 공모전",
+      "actions": "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만들었다. 팀 보고서의 데이터 분석 파트를 작성했다.",
+      "role": "데이터 분석 담당",
+      "period": "2026.07-2026.08",
+      "tools": [
+        "Python",
+        "matplotlib"
+      ],
+      "outcome": "장려상",
+      "learned": ""
+    },
+    {
+      "id": "p02_ai_omics-c4",
+      "kind": "독학",
+      "title": "생명정보학 미니 프로젝트",
+      "actions": "공개 RNA-seq 데이터로 차등발현 유전자 분석을 스스로 기획해 수행하고 결과를 블로그에 정리했다.",
+      "role": "",
+      "period": "",
+      "tools": [
+        "Python",
+        "DESeq2"
+      ],
+      "outcome": "",
+      "learned": "오믹스 데이터 정규화가 결과를 크게 바꾼다."
+    }
+  ],
+  "top": 5,
+  "include_closed": true
+}

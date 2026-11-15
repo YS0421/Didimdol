@@ -1,0 +1,188 @@
+[
+  {
+    "uid": "kier:262563",
+    "role_index": 23,
+    "title": "2026년도 하반기 자체인턴 채용(2026. 6. 10.~2026. 6. 24.)",
+    "institute": "한국에너지기술연구원",
+    "role_name": "에너지 다소비 기기 고효율화 기술-3 (에너지융합시스템)",
+    "score": 0.89,
+    "bucket": "지금 도전할 자리",
+    "field_fit": 1.0,
+    "readiness": 0.8,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-06-24",
+    "url": "https://www.kier.re.kr/board/view?linkId=262563&menuId=MENU00459",
+    "reasons": [
+      "관심 분야(기계항공, 에너지환경)와 이어져요",
+      "내 기록 1개가 요구 항목 2개와 연결돼요",
+      "마감 2026-06-24"
+    ],
+    "matches": [
+      {
+        "requirement": "열교환기 열전달 분석 지식",
+        "card_id": "p04_mech_energy-c2",
+        "card_title": "캡스톤 디자인",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "Ansys CFD 시뮬레이션",
+        "card_id": "p04_mech_energy-c2",
+        "card_title": "캡스톤 디자인",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "기계공학 실험 연구 경험 (수준 0 → 2, 우대)"
+    ]
+  },
+  {
+    "uid": "kier:262563",
+    "role_index": 24,
+    "title": "2026년도 하반기 자체인턴 채용(2026. 6. 10.~2026. 6. 24.)",
+    "institute": "한국에너지기술연구원",
+    "role_name": "부하 추종형 분산발전 기술-1 (에너지융합시스템연구단)",
+    "score": 0.837,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.667,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-06-24",
+    "url": "https://www.kier.re.kr/board/view?linkId=262563&menuId=MENU00459",
+    "reasons": [
+      "관심 분야(기계항공, 에너지환경)와 이어져요",
+      "내 기록 2개가 요구 항목 3개와 연결돼요",
+      "마감 2026-06-24"
+    ],
+    "matches": [
+      {
+        "requirement": "열역학·유체역학 지식",
+        "card_id": "p04_mech_energy-c1",
+        "card_title": "열역학·유체역학 수강",
+        "level": 1,
+        "source": "추정"
+      },
+      {
+        "requirement": "열시스템 열해석 지식",
+        "card_id": "p04_mech_energy-c2",
+        "card_title": "캡스톤 디자인",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "설계 소프트웨어·도면 작성",
+        "card_id": "p04_mech_energy-c2",
+        "card_title": "캡스톤 디자인",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "Python·Pytorch·PINN (수준 0 → 2, 우대)",
+      "전기·제어 기초 지식 (수준 0 → 1, 필수)"
+    ]
+  },
+  {
+    "uid": "kaeri:13066",
+    "role_index": 12,
+    "title": "2026년 하반기 인턴연구원 공개채용",
+    "institute": "한국원자력연구원",
+    "role_name": "청정시험시설 운영",
+    "score": 0.737,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.417,
+    "style_fit": 0.8,
+    "apply_end_on": null,
+    "url": "https://www.kaeri.re.kr/board/view?linkId=13066&menuId=MENU00428",
+    "reasons": [
+      "관심 분야(기계항공)와 이어져요",
+      "내 기록 1개가 요구 항목 1개와 연결돼요",
+      "NCS 직무: 냉동공조유지보수관리"
+    ],
+    "matches": [
+      {
+        "requirement": "상태점검 결과 분석·보고서 작성",
+        "card_id": "p04_mech_energy-c2",
+        "card_title": "캡스톤 디자인",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "공조설비 구조 및 기계·전기 지식 (수준 0 → 1, 필수)"
+    ]
+  },
+  {
+    "uid": "kims:637",
+    "role_index": 3,
+    "title": "2026년 1차 청년인턴(체험형인턴) 모집 공고",
+    "institute": "한국재료연구원",
+    "role_name": "수소 정제 및 폐수 내 자원 회수를 위한 세라믹 분리막 제조 및 특성평가",
+    "score": 0.73,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.4,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-01-21",
+    "url": "https://www.kims.re.kr/v17/bbx/board.php?bx_table=03_05&wr_id=637",
+    "reasons": [
+      "관심 분야(에너지환경)와 이어져요",
+      "내 기록 1개가 요구 항목 2개와 연결돼요",
+      "마감 2026-01-21"
+    ],
+    "matches": [
+      {
+        "requirement": "연구팀 협업",
+        "card_id": "p04_mech_energy-c2",
+        "card_title": "캡스톤 디자인",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "논문 작성 및 학회 발표",
+        "card_id": "p04_mech_energy-c2",
+        "card_title": "캡스톤 디자인",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "재료·화학·환경공학 전공 지식 (수준 0 → 1, 필수)",
+      "SEM, XRD 등 소재 분석 장비 (수준 0 → 1, 필수)",
+      "투과·제거율 측정 실험 장비 운영 (수준 0 → 1, 필수)"
+    ]
+  },
+  {
+    "uid": "kier:262369",
+    "role_index": 3,
+    "title": "2026년 상반기 자체인턴 채용 공고 (2025. 12. 14.-2025. 12. 18.)",
+    "institute": "한국에너지기술연구원",
+    "role_name": "수소 생산·저장 기술-2 (수소 정제 분리 소재·공정)",
+    "score": 0.725,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.5,
+    "style_fit": 0.5,
+    "apply_end_on": "2025-12-18",
+    "url": "https://www.kier.re.kr/board/view?linkId=262369&menuId=MENU00459",
+    "reasons": [
+      "관심 분야(에너지환경)와 이어져요",
+      "내 기록 1개가 요구 항목 1개와 연결돼요",
+      "마감 2025-12-18"
+    ],
+    "matches": [
+      {
+        "requirement": "열역학·전달현상 이론",
+        "card_id": "p04_mech_energy-c1",
+        "card_title": "열역학·유체역학 수강",
+        "level": 1,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "화학공정 설계 시뮬레이터 (수준 0 → 2, 필수)"
+    ]
+  }
+]

@@ -1,0 +1,482 @@
+{
+  "goal": {
+    "uid": "kist:18304",
+    "role_index": 4,
+    "weeks_left": 9,
+    "weekly_hours": 3
+  },
+  "history": [
+    {
+      "checkin": {
+        "week": "W1",
+        "self_ratings": {
+          "domain": 2,
+          "research": 1,
+          "data": 3,
+          "problem": 2,
+          "communication": 2,
+          "collaboration": 1
+        },
+        "milestones": [],
+        "hours_spent": 1.5,
+        "condition": 5,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kist:18304#4-1",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-3",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-7",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-8",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W2",
+        "self_ratings": {
+          "domain": 2,
+          "research": 1,
+          "data": 2,
+          "problem": 1,
+          "communication": 2,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kist:18304#4-0",
+            "title": "직무관련 경력 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kist:18304#4-0"
+          },
+          {
+            "milestone_id": "m-kist:18304#4-2",
+            "title": "기획력 핵심 개념 정리",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kist:18304#4-2"
+          }
+        ],
+        "hours_spent": 3.6,
+        "condition": 2,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kist:18304#4-1",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-3",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-7",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-8",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W3",
+        "self_ratings": {
+          "domain": 2,
+          "research": 1,
+          "data": 3,
+          "problem": 2,
+          "communication": 2,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kist:18304#4-0",
+            "title": "직무관련 경력 핵심 개념 정리",
+            "status": "on_hold",
+            "hold_reason": "motivation",
+            "consecutive_hold_weeks": 1,
+            "requirement_id": "kist:18304#4-0"
+          },
+          {
+            "milestone_id": "m-kist:18304#4-2",
+            "title": "기획력 핵심 개념 정리",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kist:18304#4-2"
+          }
+        ],
+        "hours_spent": 3.4,
+        "condition": 2,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kist:18304#4-1",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-3",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-7",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-8",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W5",
+        "self_ratings": {
+          "domain": 2,
+          "research": 1,
+          "data": 2,
+          "problem": 1,
+          "communication": 2,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kist:18304#4-0",
+            "title": "직무관련 경력 핵심 개념 정리",
+            "status": "on_hold",
+            "hold_reason": "external",
+            "consecutive_hold_weeks": 2,
+            "requirement_id": "kist:18304#4-0"
+          },
+          {
+            "milestone_id": "m-kist:18304#4-2",
+            "title": "기획력 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kist:18304#4-2"
+          }
+        ],
+        "hours_spent": 2.9,
+        "condition": 5,
+        "missed_previous_week": true
+      },
+      "evidences": [
+        {
+          "requirement_id": "kist:18304#4-1",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-3",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-4",
+          "level": 1,
+          "card_id": "p05_admin_comm-c2",
+          "quote": "언론의 종류별 특성과 콘텐츠 유형별 특성을 배우는 전공 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kist:18304#4-7",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-8",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W6",
+        "self_ratings": {
+          "domain": 2,
+          "research": 1,
+          "data": 3,
+          "problem": 2,
+          "communication": 2,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kist:18304#4-0",
+            "title": "직무관련 경력 핵심 개념 정리",
+            "status": "on_hold",
+            "hold_reason": "unclear",
+            "consecutive_hold_weeks": 3,
+            "requirement_id": "kist:18304#4-0"
+          },
+          {
+            "milestone_id": "m-kist:18304#4-2",
+            "title": "기획력 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kist:18304#4-2"
+          }
+        ],
+        "hours_spent": 2.0,
+        "condition": 2,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kist:18304#4-1",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-3",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-4",
+          "level": 1,
+          "card_id": "p05_admin_comm-c2",
+          "quote": "언론의 종류별 특성과 콘텐츠 유형별 특성을 배우는 전공 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kist:18304#4-7",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-8",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W7",
+        "self_ratings": {
+          "domain": 2,
+          "research": 1,
+          "data": 3,
+          "problem": 1,
+          "communication": 2,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kist:18304#4-0",
+            "title": "직무관련 경력 핵심 개념 정리",
+            "status": "on_hold",
+            "hold_reason": "motivation",
+            "consecutive_hold_weeks": 4,
+            "requirement_id": "kist:18304#4-0"
+          },
+          {
+            "milestone_id": "m-kist:18304#4-2",
+            "title": "기획력 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kist:18304#4-2"
+          }
+        ],
+        "hours_spent": 3.1,
+        "condition": 5,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kist:18304#4-1",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-3",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-4",
+          "level": 1,
+          "card_id": "p05_admin_comm-c2",
+          "quote": "언론의 종류별 특성과 콘텐츠 유형별 특성을 배우는 전공 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kist:18304#4-7",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-8",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W8",
+        "self_ratings": {
+          "domain": 2,
+          "research": 1,
+          "data": 3,
+          "problem": 2,
+          "communication": 1,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kist:18304#4-0",
+            "title": "직무관련 경력 핵심 개념 정리",
+            "status": "on_hold",
+            "hold_reason": "time",
+            "consecutive_hold_weeks": 5,
+            "requirement_id": "kist:18304#4-0"
+          },
+          {
+            "milestone_id": "m-kist:18304#4-2",
+            "title": "기획력 핵심 개념 정리",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kist:18304#4-2"
+          }
+        ],
+        "hours_spent": 2.7,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kist:18304#4-1",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-3",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-4",
+          "level": 1,
+          "card_id": "p05_admin_comm-c2",
+          "quote": "언론의 종류별 특성과 콘텐츠 유형별 특성을 배우는 전공 과목을 수강했다."
+        },
+        {
+          "requirement_id": "kist:18304#4-7",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        },
+        {
+          "requirement_id": "kist:18304#4-8",
+          "level": 2,
+          "card_id": "p05_admin_comm-c1",
+          "quote": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "p05_admin_comm-c1",
+      "kind": "동아리",
+      "title": "과학 동아리 홍보 담당",
+      "actions": "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를 분석해 다음 홍보방법을 정했다.",
+      "role": "홍보부장",
+      "period": "2025.03-2026.02",
+      "tools": [
+        "Canva",
+        "Instagram"
+      ],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p05_admin_comm-c2",
+      "kind": "수업",
+      "title": "미디어와 언론 수강",
+      "actions": "언론의 종류별 특성과 콘텐츠 유형별 특성을 배우는 전공 과목을 수강했다.",
+      "role": "",
+      "period": "",
+      "tools": [],
+      "outcome": "",
+      "learned": ""
+    }
+  ],
+  "style_share": {
+    "analyze": 0.1,
+    "make": 0.1,
+    "talk": 0.5,
+    "plan": 0.3
+  },
+  "mentoring": [
+    {
+      "week": "W5",
+      "question": "행정인턴은 어떤 준비를 하면 좋을까요?",
+      "answered": false,
+      "followed_up": false
+    }
+  ],
+  "kind": "monthly",
+  "format": "json",
+  "with_feedback": false,
+  "coach_tone": "praise"
+}

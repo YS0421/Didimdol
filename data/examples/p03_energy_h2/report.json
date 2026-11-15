@@ -1,0 +1,526 @@
+{
+  "kind": "monthly",
+  "goal": {
+    "title": "수소 생산·저장 기술-4 (수소연구단)",
+    "weeks_left": 2
+  },
+  "week": "W8",
+  "axis_names": {
+    "domain": "전공 지식",
+    "research": "연구·실험 수행",
+    "data": "데이터 분석·도구",
+    "problem": "문제해결",
+    "communication": "소통·문서화",
+    "collaboration": "협업·자기관리"
+  },
+  "axes": {
+    "domain": {
+      "target": 2.33,
+      "evidence": 3.0,
+      "self": 3,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 0.0
+    },
+    "research": {
+      "target": 2.33,
+      "evidence": 1.89,
+      "self": 2,
+      "quadrant": "learn_experience",
+      "gap_to_target": 0.44,
+      "self_minus_evidence": 0.11
+    },
+    "data": {
+      "target": 2.33,
+      "evidence": 3.67,
+      "self": 3,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": -0.67
+    },
+    "problem": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    },
+    "communication": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    },
+    "collaboration": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    }
+  },
+  "previous_axes": {
+    "domain": {
+      "target": 2.33,
+      "evidence": 3.0,
+      "self": 3,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 0.0
+    },
+    "research": {
+      "target": 2.33,
+      "evidence": 1.89,
+      "self": 2,
+      "quadrant": "learn_experience",
+      "gap_to_target": 0.44,
+      "self_minus_evidence": 0.11
+    },
+    "data": {
+      "target": 2.33,
+      "evidence": 3.67,
+      "self": 4,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 0.33
+    },
+    "problem": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    },
+    "communication": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    },
+    "collaboration": {
+      "target": null,
+      "evidence": null,
+      "self": null,
+      "quadrant": null,
+      "gap_to_target": null,
+      "self_minus_evidence": null
+    }
+  },
+  "goal_progress": {
+    "achievement": 0.937,
+    "by_axis": {
+      "domain": 0.0,
+      "research": 0.44,
+      "data": 0.0
+    }
+  },
+  "growth": {
+    "deltas": {
+      "domain": 0.0,
+      "research": 0.0,
+      "data": 0.0
+    },
+    "most_grown": null,
+    "stalled": [
+      "research"
+    ]
+  },
+  "projected_weeks": {
+    "domain": 0,
+    "research": null,
+    "data": 0
+  },
+  "next_actions": [
+    {
+      "requirement_id": "kier:262563#13-1",
+      "requirement_label": "세라믹 합성 기술",
+      "title": "세라믹 합성 기술 — 이번 주 30분짜리 첫걸음",
+      "how": "관련 자료를 하나 찾아 읽고, 다음에 할 일을 한 줄로 적어요. 그것만 해도 이번 주는 충분해요.",
+      "hours": 0.5,
+      "from_level": 0,
+      "to_level": 0,
+      "card_kind": null,
+      "source_quote": "세라믹 합성 기술",
+      "small_step": true
+    },
+    {
+      "requirement_id": "kier:262563#13-2",
+      "requirement_label": "박막 제조 공정",
+      "title": "박막 제조 공정 절차 익히기",
+      "how": "실험 매뉴얼·안전교육·실습 영상을 보고 절차를 순서도로 정리해요. 가능하면 실험 수업을 신청해요.",
+      "hours": 8.0,
+      "from_level": 0,
+      "to_level": 1,
+      "card_kind": "수업",
+      "source_quote": "박막 제조 공정",
+      "small_step": false
+    }
+  ],
+  "needs_adjustment": true,
+  "checklist": [],
+  "series": {
+    "weeks": [
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "evidence": {
+      "domain": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "research": [
+        1.89,
+        1.89,
+        1.89,
+        1.89,
+        1.89,
+        1.89,
+        1.89,
+        1.89
+      ],
+      "data": [
+        3.67,
+        3.67,
+        3.67,
+        3.67,
+        3.67,
+        3.67,
+        3.67,
+        3.67
+      ],
+      "problem": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "communication": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "collaboration": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "self": {
+      "domain": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "research": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "data": [
+        3,
+        4,
+        4,
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "problem": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "communication": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "collaboration": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "targets": {
+      "domain": 2.33,
+      "research": 2.33,
+      "data": 2.33,
+      "problem": null,
+      "communication": null,
+      "collaboration": null
+    }
+  },
+  "self_awareness": {
+    "latest": {
+      "domain": 0.0,
+      "research": 0.11,
+      "data": -0.67
+    },
+    "mean": {
+      "domain": 0.0,
+      "research": -0.02,
+      "data": -0.05
+    },
+    "tendency": {
+      "domain": "비슷하게 보고 있음",
+      "research": "비슷하게 보고 있음",
+      "data": "비슷하게 보고 있음"
+    }
+  },
+  "requirement_coverage": {
+    "counts": {
+      "충족": 3,
+      "없음": 2
+    },
+    "covered_ratio": 0.6,
+    "items": [
+      {
+        "id": "kier:262563#13-0",
+        "label": "전기화학 지식",
+        "required": 1,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kier:262563#13-1",
+        "label": "세라믹 합성 기술",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kier:262563#13-2",
+        "label": "박막 제조 공정",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kier:262563#13-3",
+        "label": "수소 생산·수전해 지식",
+        "required": 1,
+        "current": 1,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kier:262563#13-4",
+        "label": "전기화학적 분석",
+        "required": 1,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      }
+    ]
+  },
+  "execution": {
+    "milestone_completion": 0.5,
+    "milestones_done": 1,
+    "milestones_total": 2,
+    "hold_reasons": {
+      "time": 2,
+      "external": 1,
+      "unclear": 1,
+      "motivation": 1
+    },
+    "avg_hours": 5.6,
+    "planned_hours": 6,
+    "hours_ratio": 0.93
+  },
+  "activity": {
+    "card_kinds": {
+      "수업": 1,
+      "수업 프로젝트": 1,
+      "독학": 1
+    },
+    "checkin_weeks": [
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W5",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "consistency": 1.0
+  },
+  "tech_stack": [
+    {
+      "tool": "CV",
+      "count": 1,
+      "latest_period": "2026.03-2026.06"
+    },
+    {
+      "tool": "Excel",
+      "count": 1,
+      "latest_period": "2026.03-2026.06"
+    }
+  ],
+  "style": {
+    "activity_share": {
+      "analyze": 0.25,
+      "make": 0.5,
+      "talk": 0.0,
+      "plan": 0.25
+    },
+    "self_share": {
+      "analyze": 0.3,
+      "make": 0.5,
+      "talk": 0.1,
+      "plan": 0.1
+    },
+    "alignment": 0.85
+  },
+  "strengths": [
+    {
+      "card_id": "p03_energy_h2-c2",
+      "title": "전기화학 실험 수업",
+      "score": 4,
+      "keywords": [
+        "전기화학 지식",
+        "전기화학적 분석"
+      ],
+      "quotes": [
+        "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로",
+        "주어진 조건으로 순환전압전류법 측정을 하고 전기화학적 분석 결과를 엑셀로"
+      ]
+    },
+    {
+      "card_id": "p03_energy_h2-c1",
+      "title": "전기화학 수강",
+      "score": 1,
+      "keywords": [
+        "수소 생산·수전해 지식"
+      ],
+      "quotes": [
+        "전기화학과 물리화학 과목을 수강해 수전해와 연료전지의 원리를 배웠다."
+      ]
+    }
+  ],
+  "mentoring": {
+    "asked": 1,
+    "answered": 1,
+    "followed_up": 1
+  },
+  "condition": {
+    "private": true,
+    "series": [
+      [
+        "W1",
+        3
+      ],
+      [
+        "W2",
+        4
+      ],
+      [
+        "W3",
+        3
+      ],
+      [
+        "W4",
+        5
+      ],
+      [
+        "W5",
+        3
+      ],
+      [
+        "W6",
+        2
+      ],
+      [
+        "W7",
+        2
+      ],
+      [
+        "W8",
+        4
+      ]
+    ],
+    "condition_vs_execution": 0.31
+  },
+  "feedback": [
+    {
+      "kind": "push",
+      "reason": "stuck_milestone",
+      "text": "'세라믹 합성 기술 절차 익히기'이(가) 5주째 멈춰 있어요. 이번 주에 끝낼 수 있는 크기로 쪼개 볼게요.",
+      "source": "template"
+    },
+    {
+      "kind": "praise",
+      "reason": "milestone_done",
+      "text": "'박막 제조 공정 절차 익히기'을(를) 끝냈어요. 목표에 한 칸 더 가까워졌어요.",
+      "source": "template"
+    }
+  ],
+  "healing": ""
+}

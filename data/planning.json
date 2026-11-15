@@ -1,0 +1,46 @@
+{
+  "note": "초기 가정값. 사용자 실행 데이터가 쌓이면 실제 완료 소요 시간으로 보정한다.",
+  "step_hours": {
+    "0to1": 8,
+    "1to2": 20,
+    "2to3": 40
+  },
+  "importance": {
+    "required": 1.0,
+    "preferred": 0.5,
+    "curated_default": 0.4
+  },
+  "source_weight": {
+    "posting": 1.0,
+    "jd_ncs": 0.8,
+    "ncs_curated": 0.5
+  },
+  "kind_weight": {
+    "attitude": 0.4,
+    "certificate": 1.0,
+    "knowledge": 1.0,
+    "skill": 1.0,
+    "tool": 1.0
+  },
+  "basic_competency_weight": 0.4,
+  "recommend": {
+    "w_field": 0.45,
+    "w_readiness": 0.4,
+    "w_style": 0.15,
+    "ready_threshold": 0.7,
+    "match_threshold": 0.34,
+    "max_per_posting": 2,
+    "max_per_institute": 3,
+    "unknown_readiness": 0.35,
+    "note_unknown_readiness": "공고에 구체 요건이 없어 준비도를 계산할 수 없는 직무의 준비도 대체값. 근거로 계산된 직무보다 앞서지 않게 낮게 둔다."
+  },
+  "style_bonus_max": 0.2,
+  "feedback": {
+    "overrate_threshold": 1.5,
+    "underrate_threshold": 1.0,
+    "low_condition_max": 2,
+    "stuck_weeks": 2,
+    "deadline_alert_weeks": 4,
+    "max_items_weekly": 2
+  }
+}

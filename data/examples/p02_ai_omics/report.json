@@ -1,0 +1,678 @@
+{
+  "kind": "monthly",
+  "goal": {
+    "title": "A-5 AI 기반 다중오믹스 데이터 분석",
+    "weeks_left": 1
+  },
+  "week": "W8",
+  "axis_names": {
+    "domain": "전공 지식",
+    "research": "연구·실험 수행",
+    "data": "데이터 분석·도구",
+    "problem": "문제해결",
+    "communication": "소통·문서화",
+    "collaboration": "협업·자기관리"
+  },
+  "axes": {
+    "domain": {
+      "target": 2.33,
+      "evidence": 5.0,
+      "self": 4,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": -1.0
+    },
+    "research": {
+      "target": 3.67,
+      "evidence": 5.0,
+      "self": 4,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": -1.0
+    },
+    "data": {
+      "target": 2.83,
+      "evidence": 4.46,
+      "self": 3,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": -1.46
+    },
+    "problem": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    },
+    "communication": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    },
+    "collaboration": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    }
+  },
+  "previous_axes": {
+    "domain": {
+      "target": 2.33,
+      "evidence": 5.0,
+      "self": 4,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": -1.0
+    },
+    "research": {
+      "target": 3.67,
+      "evidence": 5.0,
+      "self": 4,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": -1.0
+    },
+    "data": {
+      "target": 2.83,
+      "evidence": 4.46,
+      "self": 3,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": -1.46
+    },
+    "problem": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    },
+    "communication": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    },
+    "collaboration": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    }
+  },
+  "goal_progress": {
+    "achievement": 0.748,
+    "by_axis": {
+      "domain": 0.0,
+      "research": 0.0,
+      "data": 0.0,
+      "problem": 1.33,
+      "communication": 1.33,
+      "collaboration": 1.33
+    }
+  },
+  "growth": {
+    "deltas": {
+      "domain": 0.0,
+      "research": 0.0,
+      "data": 0.0,
+      "problem": 0.0,
+      "communication": 0.0,
+      "collaboration": 0.0
+    },
+    "most_grown": null,
+    "stalled": [
+      "problem",
+      "communication",
+      "collaboration"
+    ]
+  },
+  "projected_weeks": {
+    "domain": 0,
+    "research": 0,
+    "data": 0,
+    "problem": null,
+    "communication": null,
+    "collaboration": null
+  },
+  "next_actions": [
+    {
+      "requirement_id": "kribb:35443#4-9",
+      "requirement_label": "의사소통능력",
+      "title": "의사소통능력 양식 익히기",
+      "how": "연구보고서·연구노트 예시를 2개 찾아 구조(목적·방법·결과·결론)를 따라 써 봐요.",
+      "hours": 8.0,
+      "from_level": 0,
+      "to_level": 1,
+      "card_kind": "독학",
+      "source_quote": "(기초능력) 의사소통능력",
+      "small_step": false
+    },
+    {
+      "requirement_id": "kribb:35443#4-10",
+      "requirement_label": "수리능력",
+      "title": "수리능력 기초 익히기",
+      "how": "Python(pandas)이나 엑셀로 공개 데이터 하나를 불러와 표·그래프를 만들어 봐요.",
+      "hours": 8.0,
+      "from_level": 0,
+      "to_level": 1,
+      "card_kind": "독학",
+      "source_quote": "의사소통능력, 수리능력",
+      "small_step": false
+    },
+    {
+      "requirement_id": "kribb:35443#4-11",
+      "requirement_label": "문제해결능력",
+      "title": "문제해결능력 사례 정리",
+      "how": "최근 막혔던 과제 하나를 골라 문제·원인 가설·시도·결과를 표로 정리해요.",
+      "hours": 8.0,
+      "from_level": 0,
+      "to_level": 1,
+      "card_kind": "독학",
+      "source_quote": "수리능력, 문제해결능력",
+      "small_step": false
+    }
+  ],
+  "needs_adjustment": true,
+  "checklist": [
+    {
+      "label": "토익 730점 이상",
+      "done": false
+    },
+    {
+      "label": "연구윤리",
+      "done": false
+    }
+  ],
+  "series": {
+    "weeks": [
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "evidence": {
+      "domain": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "research": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "data": [
+        4.21,
+        4.46,
+        4.46,
+        4.46,
+        4.46,
+        4.46,
+        4.46
+      ],
+      "problem": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "communication": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "collaboration": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "self": {
+      "domain": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "research": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "data": [
+        3,
+        3,
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "problem": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "communication": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "collaboration": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "targets": {
+      "domain": 2.33,
+      "research": 3.67,
+      "data": 2.83,
+      "problem": 2.33,
+      "communication": 2.33,
+      "collaboration": 2.33
+    }
+  },
+  "self_awareness": {
+    "latest": {
+      "domain": -1.0,
+      "research": -1.0,
+      "data": -1.46,
+      "problem": 0.0,
+      "communication": 0.0,
+      "collaboration": 0.0
+    },
+    "mean": {
+      "domain": -1.0,
+      "research": -1.0,
+      "data": -1.28,
+      "problem": 0.0,
+      "communication": 0.0,
+      "collaboration": 0.0
+    },
+    "tendency": {
+      "domain": "과소평가 경향",
+      "research": "과소평가 경향",
+      "data": "과소평가 경향",
+      "problem": "비슷하게 보고 있음",
+      "communication": "비슷하게 보고 있음",
+      "collaboration": "비슷하게 보고 있음"
+    }
+  },
+  "requirement_coverage": {
+    "counts": {
+      "충족": 6,
+      "없음": 11
+    },
+    "covered_ratio": 0.353,
+    "items": [
+      {
+        "id": "kribb:35443#4-0",
+        "label": "유전체분석·기계학습 이론",
+        "required": 1,
+        "current": 3,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-1",
+        "label": "바이오인포매틱스 분석·데이터 처리",
+        "required": 2,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-2",
+        "label": "AI·기계학습 기초 및 오믹스 이해",
+        "required": 1,
+        "current": 3,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-3",
+        "label": "Python 기초 프로그래밍",
+        "required": 1,
+        "current": 3,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-4",
+        "label": "학습에 대한 적극성",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-5",
+        "label": "토익 730점 이상",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "preferred",
+        "checklist": true
+      },
+      {
+        "id": "kribb:35443#4-6",
+        "label": "AI·생명정보학 수강·프로젝트 경험",
+        "required": 2,
+        "current": 3,
+        "status": "충족",
+        "necessity": "preferred",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-7",
+        "label": "프로그래밍 활용 경험",
+        "required": 2,
+        "current": 3,
+        "status": "충족",
+        "necessity": "preferred",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-8",
+        "label": "전략·창의·분석적 수행태도",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-9",
+        "label": "의사소통능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-10",
+        "label": "수리능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-11",
+        "label": "문제해결능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-12",
+        "label": "자기개발능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-13",
+        "label": "자원관리능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-14",
+        "label": "대인관계능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-15",
+        "label": "조직이해능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kribb:35443#4-16",
+        "label": "연구윤리",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": true
+      }
+    ]
+  },
+  "execution": {
+    "milestone_completion": 0.667,
+    "milestones_done": 2,
+    "milestones_total": 3,
+    "hold_reasons": {},
+    "avg_hours": 7.5,
+    "planned_hours": 10,
+    "hours_ratio": 0.75
+  },
+  "activity": {
+    "card_kinds": {
+      "수업 프로젝트": 1,
+      "독학": 2,
+      "공모전": 1
+    },
+    "checkin_weeks": [
+      "W1",
+      "W2",
+      "W3",
+      "W4",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "consistency": 1.0
+  },
+  "tech_stack": [
+    {
+      "tool": "Python",
+      "count": 3,
+      "latest_period": "2026.07-2026.08"
+    },
+    {
+      "tool": "DESeq2",
+      "count": 1,
+      "latest_period": ""
+    },
+    {
+      "tool": "R",
+      "count": 1,
+      "latest_period": ""
+    },
+    {
+      "tool": "matplotlib",
+      "count": 1,
+      "latest_period": "2026.07-2026.08"
+    },
+    {
+      "tool": "pandas",
+      "count": 1,
+      "latest_period": "2025.09-2025.12"
+    },
+    {
+      "tool": "scikit-learn",
+      "count": 1,
+      "latest_period": "2025.09-2025.12"
+    }
+  ],
+  "style": {
+    "activity_share": {
+      "analyze": 0.71,
+      "make": 0.12,
+      "talk": 0.0,
+      "plan": 0.18
+    },
+    "self_share": {
+      "analyze": 0.6,
+      "make": 0.2,
+      "talk": 0.1,
+      "plan": 0.1
+    },
+    "alignment": 0.81
+  },
+  "strengths": [
+    {
+      "card_id": "p02_ai_omics-c1",
+      "title": "머신러닝 수업 프로젝트",
+      "score": 15,
+      "keywords": [
+        "유전체분석·기계학습 이론",
+        "AI·기계학습 기초 및 오믹스 이해",
+        "Python 기초 프로그래밍",
+        "AI·생명정보학 수강·프로젝트 경험",
+        "프로그래밍 활용 경험"
+      ],
+      "quotes": [
+        "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki",
+        "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki",
+        "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki",
+        "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki",
+        "공개 유전자 발현 데이터로 암 아형 분류 모델을 Python과 sciki"
+      ]
+    },
+    {
+      "card_id": "p02_ai_omics-c3",
+      "title": "헬스케어 데이터 분석 공모전",
+      "score": 2,
+      "keywords": [
+        "바이오인포매틱스 분석·데이터 처리"
+      ],
+      "quotes": [
+        "의료 데이터 전처리와 시각화를 맡아 Python으로 분석 파이프라인을 만"
+      ]
+    }
+  ],
+  "mentoring": {
+    "asked": 1,
+    "answered": 1,
+    "followed_up": 1
+  },
+  "condition": {
+    "private": true,
+    "series": [
+      [
+        "W1",
+        4
+      ],
+      [
+        "W2",
+        4
+      ],
+      [
+        "W3",
+        3
+      ],
+      [
+        "W4",
+        4
+      ],
+      [
+        "W6",
+        4
+      ],
+      [
+        "W7",
+        4
+      ],
+      [
+        "W8",
+        4
+      ]
+    ],
+    "condition_vs_execution": 0.32
+  },
+  "feedback": [
+    {
+      "kind": "praise",
+      "reason": "milestone_done",
+      "text": "'수리능력 기초 익히기'을(를) 끝냈어요. 목표에 한 칸 더 가까워졌어요.",
+      "source": "template"
+    },
+    {
+      "kind": "push",
+      "reason": "deadline_gap",
+      "text": "목표 기한까지 1주 남았는데, 남은 시간으로는 모든 갭을 메우기 어려워요. 우선순위 상위 항목에 집중하거나 목표를 조정해 봐요.",
+      "source": "template"
+    }
+  ],
+  "healing": ""
+}

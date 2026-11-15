@@ -1,0 +1,187 @@
+[
+  {
+    "uid": "kier:262563",
+    "role_index": 19,
+    "title": "2026년도 하반기 자체인턴 채용(2026. 6. 10.~2026. 6. 24.)",
+    "institute": "한국에너지기술연구원",
+    "role_name": "연료전지-3 (수소연료전지연구실)",
+    "score": 0.97,
+    "bucket": "지금 도전할 자리",
+    "field_fit": 1.0,
+    "readiness": 1.0,
+    "style_fit": 0.8,
+    "apply_end_on": "2026-06-24",
+    "url": "https://www.kier.re.kr/board/view?linkId=262563&menuId=MENU00459",
+    "reasons": [
+      "관심 분야(에너지환경, 화학생명, 소재재료)와 이어져요",
+      "내 기록 2개가 요구 항목 2개와 연결돼요",
+      "마감 2026-06-24"
+    ],
+    "matches": [
+      {
+        "requirement": "연료전지·전해질막 지식",
+        "card_id": "p03_energy_h2-c1",
+        "card_title": "전기화학 수강",
+        "level": 1,
+        "source": "추정"
+      },
+      {
+        "requirement": "연료전지 성능평가 전기화학 지식",
+        "card_id": "p03_energy_h2-c2",
+        "card_title": "전기화학 실험 수업",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": []
+  },
+  {
+    "uid": "kier:262369",
+    "role_index": 2,
+    "title": "2026년 상반기 자체인턴 채용 공고 (2025. 12. 14.-2025. 12. 18.)",
+    "institute": "한국에너지기술연구원",
+    "role_name": "수소 생산·저장 기술-1 (수전해용 다공성 소결체)",
+    "score": 0.925,
+    "bucket": "지금 도전할 자리",
+    "field_fit": 1.0,
+    "readiness": 1.0,
+    "style_fit": 0.5,
+    "apply_end_on": "2025-12-18",
+    "url": "https://www.kier.re.kr/board/view?linkId=262369&menuId=MENU00459",
+    "reasons": [
+      "관심 분야(화학생명, 소재재료, 에너지환경)와 이어져요",
+      "내 기록 2개가 요구 항목 2개와 연결돼요",
+      "마감 2025-12-18"
+    ],
+    "matches": [
+      {
+        "requirement": "수전해 수소생산 지식",
+        "card_id": "p03_energy_h2-c1",
+        "card_title": "전기화학 수강",
+        "level": 1,
+        "source": "추정"
+      },
+      {
+        "requirement": "수전해 전기화학 지식",
+        "card_id": "p03_energy_h2-c2",
+        "card_title": "전기화학 실험 수업",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": []
+  },
+  {
+    "uid": "kier:262369",
+    "role_index": 34,
+    "title": "2026년 상반기 자체인턴 채용 공고 (2025. 12. 14.-2025. 12. 18.)",
+    "institute": "한국에너지기술연구원",
+    "role_name": "수소 생산·저장 기술-8 (해수 수전해 전기촉매, 제주)",
+    "score": 0.925,
+    "bucket": "지금 도전할 자리",
+    "field_fit": 1.0,
+    "readiness": 1.0,
+    "style_fit": 0.5,
+    "apply_end_on": "2025-12-18",
+    "url": "https://www.kier.re.kr/board/view?linkId=262369&menuId=MENU00459",
+    "reasons": [
+      "관심 분야(화학생명, 소재재료, 에너지환경)와 이어져요",
+      "내 기록 2개가 요구 항목 2개와 연결돼요",
+      "마감 2025-12-18"
+    ],
+    "matches": [
+      {
+        "requirement": "수전해 지식",
+        "card_id": "p03_energy_h2-c1",
+        "card_title": "전기화학 수강",
+        "level": 1,
+        "source": "추정"
+      },
+      {
+        "requirement": "화학·분석화학·전기화학 지식",
+        "card_id": "p03_energy_h2-c2",
+        "card_title": "전기화학 실험 수업",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": []
+  },
+  {
+    "uid": "kaeri:13066",
+    "role_index": 18,
+    "title": "2026년 하반기 인턴연구원 공개채용",
+    "institute": "한국원자력연구원",
+    "role_name": "화학제품연구개발",
+    "score": 0.744,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.435,
+    "style_fit": 0.8,
+    "apply_end_on": null,
+    "url": "https://www.kaeri.re.kr/board/view?linkId=13066&menuId=MENU00428",
+    "reasons": [
+      "관심 분야(화학생명)와 이어져요",
+      "내 기록 1개가 요구 항목 2개와 연결돼요"
+    ],
+    "matches": [
+      {
+        "requirement": "기초 화학실험 지식",
+        "card_id": "p03_energy_h2-c2",
+        "card_title": "전기화학 실험 수업",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "화학 실험 기자재 운영",
+        "card_id": "p03_energy_h2-c2",
+        "card_title": "전기화학 실험 수업",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "분석장비 작동원리 (수준 0 → 1, 필수)",
+      "이화학 분석장비 운영 (수준 0 → 2, 필수)"
+    ]
+  },
+  {
+    "uid": "kaeri:13066",
+    "role_index": 4,
+    "title": "2026년 하반기 인턴연구원 공개채용",
+    "institute": "한국원자력연구원",
+    "role_name": "초고내열 세라믹 코팅층 제조",
+    "score": 0.71,
+    "bucket": "준비하며 목표로 삼을 자리",
+    "field_fit": 1.0,
+    "readiness": 0.351,
+    "style_fit": 0.8,
+    "apply_end_on": null,
+    "url": "https://www.kaeri.re.kr/board/view?linkId=13066&menuId=MENU00428",
+    "reasons": [
+      "관심 분야(소재재료, 화학생명)와 이어져요",
+      "내 기록 1개가 요구 항목 2개와 연결돼요"
+    ],
+    "matches": [
+      {
+        "requirement": "CVD·CVI·진공 기초 지식",
+        "card_id": "p03_energy_h2-c2",
+        "card_title": "전기화학 실험 수업",
+        "level": 2,
+        "source": "추정"
+      },
+      {
+        "requirement": "공정·분석 데이터 정리",
+        "card_id": "p03_energy_h2-c2",
+        "card_title": "전기화학 실험 수업",
+        "level": 2,
+        "source": "추정"
+      }
+    ],
+    "gaps": [
+      "CVD/CVI 장치 습득 및 운영 (수준 0 → 2, 필수)",
+      "그래프·PPT·보고서 작성 (수준 0 → 2, 필수)",
+      "MOCVD 등 진공 박막 장비 경험 (수준 0 → 2, 우대)"
+    ]
+  }
+]

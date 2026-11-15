@@ -1,0 +1,24 @@
+{
+  "note": "가상 학부생 (실존 인물 아님)",
+  "persona_id": "p02_ai_omics",
+  "summary": "4학년 졸업예정 · 컴퓨터공학+생명 복수전공 · 데이터 프로젝트 다수 · 자기평가 낮음",
+  "grade": "4학년",
+  "coach_tone": "praise",
+  "profile": {
+    "status": "expected",
+    "interest_fields": [
+      "ai",
+      "it",
+      "chem"
+    ],
+    "regions": [],
+    "style_share": {
+      "analyze": 0.6,
+      "make": 0.2,
+      "talk": 0.1,
+      "plan": 0.1
+    },
+    "weekly_hours": 10,
+    "include_admin": false
+  }
+}

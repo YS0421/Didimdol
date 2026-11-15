@@ -1,0 +1,587 @@
+{
+  "goal": {
+    "uid": "kribb:35443",
+    "role_index": 3,
+    "weeks_left": 3,
+    "weekly_hours": 8
+  },
+  "history": [
+    {
+      "checkin": {
+        "week": "W1",
+        "self_ratings": {
+          "domain": 3,
+          "research": 3,
+          "data": 2,
+          "problem": 2,
+          "communication": 2,
+          "collaboration": 2
+        },
+        "milestones": [],
+        "hours_spent": 7.2,
+        "condition": 5,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#3-0",
+          "level": 1,
+          "card_id": "p01_bio_lab-c1",
+          "quote": "생화학, 분자생물학, 세포생물학 과목을 수강했다. 단백질 구조와 세포사멸"
+        },
+        {
+          "requirement_id": "kribb:35443#3-1",
+          "level": 1,
+          "card_id": "p01_bio_lab-c1",
+          "quote": "생화학, 분자생물학, 세포생물학 과목을 수강했다. 단백질 구조와 세포사멸"
+        },
+        {
+          "requirement_id": "kribb:35443#3-2",
+          "level": 1,
+          "card_id": "p01_bio_lab-c1",
+          "quote": "생화학, 분자생물학, 세포생물학 과목을 수강했다. 단백질 구조와 세포사멸"
+        },
+        {
+          "requirement_id": "kribb:35443#3-3",
+          "level": 2,
+          "card_id": "p01_bio_lab-c2",
+          "quote": "선배가 정한 프로토콜대로 세포배양을 하고 웨스턴 블롯으로 단백질 발현을 "
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W2",
+        "self_ratings": {
+          "domain": 2,
+          "research": 3,
+          "data": 2,
+          "problem": 2,
+          "communication": 2,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#3-1",
+            "title": "생화학/분자생물학 실험 기술 직접 해 보기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-1"
+          },
+          {
+            "milestone_id": "m-kribb:35443#3-5",
+            "title": "의사소통능력 양식 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-5"
+          }
+        ],
+        "hours_spent": 5.4,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#3-0",
+          "level": 1,
+          "card_id": "p01_bio_lab-c1",
+          "quote": "생화학, 분자생물학, 세포생물학 과목을 수강했다. 단백질 구조와 세포사멸"
+        },
+        {
+          "requirement_id": "kribb:35443#3-1",
+          "level": 1,
+          "card_id": "p01_bio_lab-c1",
+          "quote": "생화학, 분자생물학, 세포생물학 과목을 수강했다. 단백질 구조와 세포사멸"
+        },
+        {
+          "requirement_id": "kribb:35443#3-2",
+          "level": 1,
+          "card_id": "p01_bio_lab-c1",
+          "quote": "생화학, 분자생물학, 세포생물학 과목을 수강했다. 단백질 구조와 세포사멸"
+        },
+        {
+          "requirement_id": "kribb:35443#3-3",
+          "level": 2,
+          "card_id": "p01_bio_lab-c2",
+          "quote": "선배가 정한 프로토콜대로 세포배양을 하고 웨스턴 블롯으로 단백질 발현을 "
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W3",
+        "self_ratings": {
+          "domain": 5,
+          "research": 5,
+          "data": 2,
+          "problem": 2,
+          "communication": 2,
+          "collaboration": 1
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#3-1",
+            "title": "생화학/분자생물학 실험 기술 직접 해 보기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-1"
+          },
+          {
+            "milestone_id": "m-kribb:35443#3-5",
+            "title": "의사소통능력 양식 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-5"
+          }
+        ],
+        "hours_spent": 8.1,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#3-0",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-1",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-2",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-3",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W4",
+        "self_ratings": {
+          "domain": 5,
+          "research": 5,
+          "data": 2,
+          "problem": 2,
+          "communication": 1,
+          "collaboration": 2
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#3-5",
+            "title": "의사소통능력 양식 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-5"
+          },
+          {
+            "milestone_id": "m-kribb:35443#3-6",
+            "title": "수리능력 기초 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-6"
+          }
+        ],
+        "hours_spent": 5.8,
+        "condition": 2,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#3-0",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-1",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-2",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-3",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W5",
+        "self_ratings": {
+          "domain": 5,
+          "research": 5,
+          "data": 2,
+          "problem": 2,
+          "communication": 1,
+          "collaboration": 2
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#3-5",
+            "title": "의사소통능력 양식 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-5"
+          },
+          {
+            "milestone_id": "m-kribb:35443#3-6",
+            "title": "수리능력 기초 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-6"
+          }
+        ],
+        "hours_spent": 8.3,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#3-0",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-1",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-2",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-3",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W6",
+        "self_ratings": {
+          "domain": 5,
+          "research": 5,
+          "data": 1,
+          "problem": 2,
+          "communication": 2,
+          "collaboration": 2
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#3-5",
+            "title": "의사소통능력 양식 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-5"
+          },
+          {
+            "milestone_id": "m-kribb:35443#3-6",
+            "title": "수리능력 기초 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-6"
+          }
+        ],
+        "hours_spent": 6.9,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#3-0",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-1",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-2",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-3",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-11",
+          "level": 1,
+          "card_id": "p01_bio_lab-c4",
+          "quote": "연구윤리정보센터 온라인 교육으로 연구윤리와 연구노트 작성 원칙을 공부했다"
+        },
+        {
+          "requirement_id": "kribb:35443#3-12",
+          "level": 1,
+          "card_id": "p01_bio_lab-c4",
+          "quote": "연구윤리정보센터 온라인 교육으로 연구윤리와 연구노트 작성 원칙을 공부했다"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W7",
+        "self_ratings": {
+          "domain": 5,
+          "research": 5,
+          "data": 2,
+          "problem": 2,
+          "communication": 2,
+          "collaboration": 2
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#3-5",
+            "title": "의사소통능력 양식 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-5"
+          },
+          {
+            "milestone_id": "m-kribb:35443#3-6",
+            "title": "수리능력 기초 익히기",
+            "status": "in_progress",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-6"
+          }
+        ],
+        "hours_spent": 5.6,
+        "condition": 5,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#3-0",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-1",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-2",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-3",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-11",
+          "level": 1,
+          "card_id": "p01_bio_lab-c4",
+          "quote": "연구윤리정보센터 온라인 교육으로 연구윤리와 연구노트 작성 원칙을 공부했다"
+        },
+        {
+          "requirement_id": "kribb:35443#3-12",
+          "level": 1,
+          "card_id": "p01_bio_lab-c4",
+          "quote": "연구윤리정보센터 온라인 교육으로 연구윤리와 연구노트 작성 원칙을 공부했다"
+        }
+      ]
+    },
+    {
+      "checkin": {
+        "week": "W8",
+        "self_ratings": {
+          "domain": 5,
+          "research": 5,
+          "data": 2,
+          "problem": 1,
+          "communication": 1,
+          "collaboration": 2
+        },
+        "milestones": [
+          {
+            "milestone_id": "m-kribb:35443#3-5",
+            "title": "의사소통능력 양식 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-5"
+          },
+          {
+            "milestone_id": "m-kribb:35443#3-6",
+            "title": "수리능력 기초 익히기",
+            "status": "done",
+            "hold_reason": null,
+            "consecutive_hold_weeks": 0,
+            "requirement_id": "kribb:35443#3-6"
+          }
+        ],
+        "hours_spent": 6.8,
+        "condition": 4,
+        "missed_previous_week": false
+      },
+      "evidences": [
+        {
+          "requirement_id": "kribb:35443#3-0",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-1",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-2",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-3",
+          "level": 3,
+          "card_id": "p01_bio_lab-c3",
+          "quote": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분"
+        },
+        {
+          "requirement_id": "kribb:35443#3-11",
+          "level": 1,
+          "card_id": "p01_bio_lab-c4",
+          "quote": "연구윤리정보센터 온라인 교육으로 연구윤리와 연구노트 작성 원칙을 공부했다"
+        },
+        {
+          "requirement_id": "kribb:35443#3-12",
+          "level": 1,
+          "card_id": "p01_bio_lab-c4",
+          "quote": "연구윤리정보센터 온라인 교육으로 연구윤리와 연구노트 작성 원칙을 공부했다"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "p01_bio_lab-c1",
+      "kind": "수업",
+      "title": "생화학·분자생물학 수강",
+      "actions": "생화학, 분자생물학, 세포생물학 과목을 수강했다. 단백질 구조와 세포사멸 기전을 배웠다.",
+      "role": "",
+      "period": "2025.03-2025.12",
+      "tools": [
+        "SDS-PAGE"
+      ],
+      "outcome": "",
+      "learned": ""
+    },
+    {
+      "id": "p01_bio_lab-c2",
+      "kind": "학부연구생",
+      "title": "세포배양 실험 보조",
+      "actions": "선배가 정한 프로토콜대로 세포배양을 하고 웨스턴 블롯으로 단백질 발현을 확인했다. 실험 결과를 연구노트에 정리했다.",
+      "role": "학부연구생",
+      "period": "2026.03-2026.06",
+      "tools": [
+        "세포배양",
+        "Western blot"
+      ],
+      "outcome": "연구노트 4개월분",
+      "learned": ""
+    },
+    {
+      "id": "p01_bio_lab-c3",
+      "kind": "수업 프로젝트",
+      "title": "분자생물학 실험 기말 프로젝트",
+      "actions": "PCR 조건을 직접 설계해 유전자 증폭 실험을 하고, 전기영동 결과를 분석해 보고서를 썼다.",
+      "role": "팀장",
+      "period": "2026.09-2026.12",
+      "tools": [
+        "PCR",
+        "전기영동"
+      ],
+      "outcome": "",
+      "learned": "조건을 바꾸면 결과가 어떻게 달라지는지 체계적으로 기록하는 법을 배웠다."
+    },
+    {
+      "id": "p01_bio_lab-c4",
+      "kind": "독학",
+      "title": "연구윤리 온라인 교육 이수",
+      "actions": "연구윤리정보센터 온라인 교육으로 연구윤리와 연구노트 작성 원칙을 공부했다.",
+      "role": "",
+      "period": "",
+      "tools": [],
+      "outcome": "",
+      "learned": ""
+    }
+  ],
+  "style_share": {
+    "analyze": 0.4,
+    "make": 0.4,
+    "talk": 0.1,
+    "plan": 0.1
+  },
+  "mentoring": [
+    {
+      "week": "W2",
+      "question": "학부연구생 경험을 지원서에 어떻게 쓰면 좋을까요?",
+      "answered": true,
+      "followed_up": true
+    },
+    {
+      "week": "W6",
+      "question": "단백질 구조 분석을 혼자 공부하려면 무엇부터 보면 될까요?",
+      "answered": true,
+      "followed_up": false
+    }
+  ],
+  "kind": "monthly",
+  "format": "json",
+  "with_feedback": false,
+  "coach_tone": "balanced"
+}

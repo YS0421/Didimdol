@@ -1,0 +1,26 @@
+{
+  "note": "가상 학부생 (실존 인물 아님)",
+  "persona_id": "p03_energy_h2",
+  "summary": "4학년 졸업예정 · 화학공학 · 전기화학 수업 위주 · 시간 여유 보통",
+  "grade": "4학년",
+  "coach_tone": "direct",
+  "profile": {
+    "status": "expected",
+    "interest_fields": [
+      "energy",
+      "chem",
+      "material"
+    ],
+    "regions": [
+      "대전"
+    ],
+    "style_share": {
+      "analyze": 0.3,
+      "make": 0.5,
+      "talk": 0.1,
+      "plan": 0.1
+    },
+    "weekly_hours": 6,
+    "include_admin": false
+  }
+}

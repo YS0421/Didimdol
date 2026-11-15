@@ -1,0 +1,689 @@
+{
+  "kind": "monthly",
+  "goal": {
+    "title": "행정인턴(커뮤니케이션팀)",
+    "weeks_left": 9
+  },
+  "week": "W8",
+  "axis_names": {
+    "domain": "전공 지식",
+    "research": "연구·실험 수행",
+    "data": "데이터 분석·도구",
+    "problem": "문제해결",
+    "communication": "소통·문서화",
+    "collaboration": "협업·자기관리"
+  },
+  "axes": {
+    "domain": {
+      "target": 2.45,
+      "evidence": 2.21,
+      "self": 2,
+      "quadrant": "learn_experience",
+      "gap_to_target": 0.24,
+      "self_minus_evidence": -0.21
+    },
+    "research": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    },
+    "data": {
+      "target": 2.33,
+      "evidence": 2.57,
+      "self": 3,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 0.43
+    },
+    "problem": {
+      "target": 2.33,
+      "evidence": 1.58,
+      "self": 2,
+      "quadrant": "learn_experience",
+      "gap_to_target": 0.75,
+      "self_minus_evidence": 0.42
+    },
+    "communication": {
+      "target": 2.33,
+      "evidence": 1.78,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 0.55,
+      "self_minus_evidence": -0.78
+    },
+    "collaboration": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    }
+  },
+  "previous_axes": {
+    "domain": {
+      "target": 2.45,
+      "evidence": 2.21,
+      "self": 2,
+      "quadrant": "learn_experience",
+      "gap_to_target": 0.24,
+      "self_minus_evidence": -0.21
+    },
+    "research": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    },
+    "data": {
+      "target": 2.33,
+      "evidence": 2.57,
+      "self": 3,
+      "quadrant": "maintain_expand",
+      "gap_to_target": 0.0,
+      "self_minus_evidence": 0.43
+    },
+    "problem": {
+      "target": 2.33,
+      "evidence": 1.58,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 0.75,
+      "self_minus_evidence": -0.58
+    },
+    "communication": {
+      "target": 2.33,
+      "evidence": 1.78,
+      "self": 2,
+      "quadrant": "learn_experience",
+      "gap_to_target": 0.55,
+      "self_minus_evidence": 0.22
+    },
+    "collaboration": {
+      "target": 2.33,
+      "evidence": 1.0,
+      "self": 1,
+      "quadrant": "learn_experience",
+      "gap_to_target": 1.33,
+      "self_minus_evidence": 0.0
+    }
+  },
+  "goal_progress": {
+    "achievement": 0.702,
+    "by_axis": {
+      "domain": 0.24,
+      "research": 1.33,
+      "data": 0.0,
+      "problem": 0.75,
+      "communication": 0.55,
+      "collaboration": 1.33
+    }
+  },
+  "growth": {
+    "deltas": {
+      "domain": 0.0,
+      "research": 0.0,
+      "data": 0.0,
+      "problem": 0.0,
+      "communication": 0.0,
+      "collaboration": 0.0
+    },
+    "most_grown": null,
+    "stalled": [
+      "domain",
+      "research",
+      "problem",
+      "communication",
+      "collaboration"
+    ]
+  },
+  "projected_weeks": {
+    "domain": 5,
+    "research": null,
+    "data": 0,
+    "problem": null,
+    "communication": null,
+    "collaboration": null
+  },
+  "next_actions": [
+    {
+      "requirement_id": "kist:18304#4-2",
+      "requirement_label": "기획력",
+      "title": "기획력 핵심 개념 정리",
+      "how": "관련 전공 강의 1~2개나 교재 한 장(chapter)을 골라 핵심 개념 5개를 내 말로 정리해요.",
+      "hours": 8.0,
+      "from_level": 0,
+      "to_level": 1,
+      "card_kind": "독학",
+      "source_quote": "기획력",
+      "small_step": false
+    },
+    {
+      "requirement_id": "kist:18304#4-5",
+      "requirement_label": "커뮤니케이션 방법",
+      "title": "커뮤니케이션 방법 핵심 개념 정리",
+      "how": "관련 전공 강의 1~2개나 교재 한 장(chapter)을 골라 핵심 개념 5개를 내 말로 정리해요.",
+      "hours": 8.0,
+      "from_level": 0,
+      "to_level": 1,
+      "card_kind": "독학",
+      "source_quote": "커뮤니케이션 방법",
+      "small_step": false
+    },
+    {
+      "requirement_id": "kist:18304#4-6",
+      "requirement_label": "실행 일정 수립",
+      "title": "실행 일정 수립 사례 정리",
+      "how": "최근 막혔던 과제 하나를 골라 문제·원인 가설·시도·결과를 표로 정리해요.",
+      "hours": 8.0,
+      "from_level": 0,
+      "to_level": 1,
+      "card_kind": "독학",
+      "source_quote": "실행 일정 수립 능력",
+      "small_step": false
+    }
+  ],
+  "needs_adjustment": true,
+  "checklist": [],
+  "series": {
+    "weeks": [
+      "W1",
+      "W2",
+      "W3",
+      "W5",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "evidence": {
+      "domain": [
+        1.97,
+        1.97,
+        1.97,
+        2.21,
+        2.21,
+        2.21,
+        2.21
+      ],
+      "research": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "data": [
+        2.57,
+        2.57,
+        2.57,
+        2.57,
+        2.57,
+        2.57,
+        2.57
+      ],
+      "problem": [
+        1.58,
+        1.58,
+        1.58,
+        1.58,
+        1.58,
+        1.58,
+        1.58
+      ],
+      "communication": [
+        1.78,
+        1.78,
+        1.78,
+        1.78,
+        1.78,
+        1.78,
+        1.78
+      ],
+      "collaboration": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "self": {
+      "domain": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "research": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "data": [
+        3,
+        2,
+        3,
+        2,
+        3,
+        3,
+        3
+      ],
+      "problem": [
+        2,
+        1,
+        2,
+        1,
+        2,
+        1,
+        2
+      ],
+      "communication": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1
+      ],
+      "collaboration": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "targets": {
+      "domain": 2.45,
+      "research": 2.33,
+      "data": 2.33,
+      "problem": 2.33,
+      "communication": 2.33,
+      "collaboration": 2.33
+    }
+  },
+  "self_awareness": {
+    "latest": {
+      "domain": -0.21,
+      "research": 0.0,
+      "data": 0.43,
+      "problem": 0.42,
+      "communication": -0.78,
+      "collaboration": 0.0
+    },
+    "mean": {
+      "domain": -0.11,
+      "research": 0.0,
+      "data": 0.14,
+      "problem": -0.01,
+      "communication": 0.08,
+      "collaboration": 0.0
+    },
+    "tendency": {
+      "domain": "비슷하게 보고 있음",
+      "research": "비슷하게 보고 있음",
+      "data": "비슷하게 보고 있음",
+      "problem": "비슷하게 보고 있음",
+      "communication": "비슷하게 보고 있음",
+      "collaboration": "비슷하게 보고 있음"
+    }
+  },
+  "requirement_coverage": {
+    "counts": {
+      "없음": 16,
+      "충족": 5
+    },
+    "covered_ratio": 0.238,
+    "items": [
+      {
+        "id": "kist:18304#4-0",
+        "label": "직무관련 경력",
+        "required": 2,
+        "current": 0,
+        "status": "없음",
+        "necessity": "preferred",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-1",
+        "label": "홍보물 트렌드 분석",
+        "required": 1,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-2",
+        "label": "기획력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-3",
+        "label": "콘텐츠 유형별 특성",
+        "required": 1,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-4",
+        "label": "언론의 종류별 특성",
+        "required": 1,
+        "current": 1,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-5",
+        "label": "커뮤니케이션 방법",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-6",
+        "label": "실행 일정 수립",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-7",
+        "label": "결과 분석",
+        "required": 1,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-8",
+        "label": "홍보방법 선택",
+        "required": 1,
+        "current": 2,
+        "status": "충족",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-9",
+        "label": "관계 구축",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-10",
+        "label": "적극적 문제해결 태도",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-11",
+        "label": "관찰적 자세",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-12",
+        "label": "분석적 태도",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-13",
+        "label": "주인의식 및 책임감",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-14",
+        "label": "창의적 사고 노력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-15",
+        "label": "업무수행 지침 및 규정 준수",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-16",
+        "label": "의사소통능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-17",
+        "label": "문제해결능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-18",
+        "label": "정보 수집 및 분석 능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-19",
+        "label": "조직이해능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      },
+      {
+        "id": "kist:18304#4-20",
+        "label": "자기개발능력",
+        "required": 1,
+        "current": 0,
+        "status": "없음",
+        "necessity": "required",
+        "checklist": false
+      }
+    ]
+  },
+  "execution": {
+    "milestone_completion": 0.5,
+    "milestones_done": 1,
+    "milestones_total": 2,
+    "hold_reasons": {
+      "motivation": 2,
+      "external": 1,
+      "unclear": 1,
+      "time": 1
+    },
+    "avg_hours": 2.7,
+    "planned_hours": 3,
+    "hours_ratio": 0.91
+  },
+  "activity": {
+    "card_kinds": {
+      "동아리": 1,
+      "수업": 1
+    },
+    "checkin_weeks": [
+      "W1",
+      "W2",
+      "W3",
+      "W5",
+      "W6",
+      "W7",
+      "W8"
+    ],
+    "consistency": 1.0
+  },
+  "tech_stack": [
+    {
+      "tool": "Canva",
+      "count": 1,
+      "latest_period": "2025.03-2026.02"
+    },
+    {
+      "tool": "Instagram",
+      "count": 1,
+      "latest_period": "2025.03-2026.02"
+    }
+  ],
+  "style": {
+    "activity_share": {
+      "analyze": 0.33,
+      "make": 0.33,
+      "talk": 0.0,
+      "plan": 0.33
+    },
+    "self_share": {
+      "analyze": 0.1,
+      "make": 0.1,
+      "talk": 0.5,
+      "plan": 0.3
+    },
+    "alignment": 0.51
+  },
+  "strengths": [
+    {
+      "card_id": "p05_admin_comm-c1",
+      "title": "과학 동아리 홍보 담당",
+      "score": 8,
+      "keywords": [
+        "홍보물 트렌드 분석",
+        "콘텐츠 유형별 특성",
+        "결과 분석",
+        "홍보방법 선택"
+      ],
+      "quotes": [
+        "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를",
+        "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를",
+        "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를",
+        "동아리 SNS 콘텐츠 기획과 카드뉴스 제작을 맡았다. 게시물 반응 결과를"
+      ]
+    },
+    {
+      "card_id": "p05_admin_comm-c2",
+      "title": "미디어와 언론 수강",
+      "score": 1,
+      "keywords": [
+        "언론의 종류별 특성"
+      ],
+      "quotes": [
+        "언론의 종류별 특성과 콘텐츠 유형별 특성을 배우는 전공 과목을 수강했다."
+      ]
+    }
+  ],
+  "mentoring": {
+    "asked": 1,
+    "answered": 0,
+    "followed_up": 0
+  },
+  "condition": {
+    "private": true,
+    "series": [
+      [
+        "W1",
+        5
+      ],
+      [
+        "W2",
+        2
+      ],
+      [
+        "W3",
+        2
+      ],
+      [
+        "W5",
+        5
+      ],
+      [
+        "W6",
+        2
+      ],
+      [
+        "W7",
+        5
+      ],
+      [
+        "W8",
+        4
+      ]
+    ],
+    "condition_vs_execution": 0.43
+  },
+  "feedback": [
+    {
+      "kind": "praise",
+      "reason": "milestone_done",
+      "text": "'기획력 핵심 개념 정리'을(를) 끝냈어요. 목표에 한 칸 더 가까워졌어요.",
+      "source": "template"
+    },
+    {
+      "kind": "push",
+      "reason": "stuck_milestone",
+      "text": "'직무관련 경력 핵심 개념 정리'이(가) 5주째 멈춰 있어요. 이번 주에 끝낼 수 있는 크기로 쪼개 볼게요.",
+      "source": "template"
+    }
+  ],
+  "healing": ""
+}
