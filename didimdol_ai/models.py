@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, fields
 from typing import Literal, Optional
 
 Source = Literal["posting", "jd_ncs", "ncs_curated"]
@@ -45,6 +45,12 @@ class ExperienceCard:
     tools: list[str] = field(default_factory=list)
     outcome: str = ""
     learned: str = ""
+
+    @classmethod
+    def from_dict(cls, d: dict) -> "ExperienceCard":
+        """JSON 파일의 카드 → 객체. 예시 데이터의 added_week처럼 카드 필드가 아닌 키는 무시한다."""
+        names = {f.name for f in fields(cls)}
+        return cls(**{k: v for k, v in d.items() if k in names})
 
     def text(self) -> str:
         """LLM 입력이자 인용 검증 대상이 되는 카드 본문."""

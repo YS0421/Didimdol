@@ -32,13 +32,14 @@
 11. [피드백 엔진](#피드백-엔진-feedbackpy)
 12. [리포트](#리포트-metricspy-report_htmlpy)
 13. [API 서버](#api-서버-apipy)
-14. [정기 실행](#정기-실행-scriptsdailypy)
-15. [검증과 테스트](#검증과-테스트)
-16. [가상 학부생 예시 데이터셋](#가상-학부생-예시-데이터셋-dataexamples)
-17. [보안·개인정보·수집 윤리](#보안개인정보수집-윤리)
-18. [현재 데이터 현황](#현재-데이터-현황-2026-11-15)
-19. [알려진 한계](#알려진-한계)
-20. [남은 일](#남은-일)
+14. [자기상태표 입력 화면](#자기상태표-입력-화면-input_htmlpy)
+15. [정기 실행](#정기-실행-scriptsdailypy)
+16. [검증과 테스트](#검증과-테스트)
+17. [가상 학부생 예시 데이터셋](#가상-학부생-예시-데이터셋-dataexamples)
+18. [보안·개인정보·수집 윤리](#보안개인정보수집-윤리)
+19. [현재 데이터 현황](#현재-데이터-현황-2026-11-15)
+20. [알려진 한계](#알려진-한계)
+21. [남은 일](#남은-일)
 
 ---
 
@@ -49,7 +50,7 @@ git clone https://github.com/YS0421/Didimdol.git
 cd Didimdol
 pip install -r requirements.txt
 cp .env.example .env            # 키 입력 (아래 '키 설정' 참고)
-python -m unittest              # 테스트 122개 (실제 API 호출 없음)
+python -m unittest              # 테스트 129개 (실제 API 호출 없음)
 python -m didimdol_ai.simulate  # 가상 학생 5명 × 8주 원칙 검증
 ```
 
@@ -144,7 +145,8 @@ didimdol-ai/
 │   ├── actions.py              # 갭 → 다음 한 칸 행동
 │   ├── feedback.py             # 주간 피드백 규칙 엔진
 │   ├── metrics.py              # 리포트 지표 12종 + build_report()
-│   ├── report_html.py          # 리포트 HTML (인라인 SVG)
+│   ├── report_html.py          # 리포트 HTML (사이트 디자인, 끼워 넣는 조각)
+│   ├── input_html.py           # 자기상태표 입력 화면 (체크인·경험 카드·목표)
 │   ├── recommend.py            # 공고 직무 추천
 │   ├── ncs.py                  # NCS 큐레이션 빌드·검색·코드 연결
 │   ├── api.py                  # FastAPI 서버
@@ -567,20 +569,34 @@ python -m didimdol_ai report --kind monthly --out reports/demo_monthly.html
 | 컨디션 (본인만) | 컨디션 추세, 컨디션과 실행의 관계 | `condition_trend` |
 | 다음 한 칸 | 행동 제안, 체크리스트 | `actions.next_actions` |
 
-**보고서 구성**
+**화면 구성 (중요한 것부터 위에 배치)**
 
-- **주간 (1화면):** 목표 달성도, 이번 주 가장 자란 축, 육각형, 다음 한 칸, 체크리스트, 코치의 말
-- **월간:** 주간 내용에 위 지표 전체와 축별 추이선을 더해요.
+1. **요약:** 목표 직무, "목표까지 n% 왔어요" 한 문장, 숫자 칸(달성도, 남은 기간, 끝낸 할 일, 요구 항목 충족)
+2. **이번 주 코치의 말:** 최대 2개. 컨디션이 낮은 주에는 숲 힐링 안내를 진한 초록 상자로 보여 줘요.
+3. **다음 한 칸:** 최대 3개, 번호순이에요. 공고 원문 근거는 "왜 필요해요?"를 눌러야 보여요.
+4. **나의 육각형 능력치:** 육각형에는 목표, 지금의 나(기록), 내가 본 나 3겹만 그려요. 옆의 축 목록은 막대와 "목표 도달 / 목표까지 n"으로 보여 줘요. 숫자 표는 "숫자로 보기" 안에 접어 뒀어요.
+5. **한 달 돌아보기 (월간만):** 주차별 변화, 요구 항목, 나를 보는 눈, 자소서·면접에 쓸 경험, 실행과 멘토링, 컨디션(나만 보기)이 접힌 묶음으로 들어 있어요. 필요한 것만 펼쳐 봐요.
 
-**HTML (`report_html.py`)**
+- **쉬운 말 쓰기:** "근거 점수"는 "기록", "자기평가"는 "내가 본 나"로 바꿔 보여 줘요. "기록·증명" 같은 내부 용어는 화면에 내보내지 않아요.
+- **조사 자동 선택:** 피드백 문장의 "이(가)", "을(를)"은 앞 글자 받침에 맞게 자동으로 골라요(`text.fix_josa`).
 
-- 차트는 인라인 SVG예요. 외부 라이브러리가 없어요.
-  - 육각형 레이더: 목표선, 근거, 자기평가, 지난주 4겹. 연결된 항목이 없는 축은 "해당 없음"으로 표시해요.
-  - 축별 추이선
-  - 커버리지 막대
-- 색은 3색만 써요. 라이트·다크 모드 모두 색약 대비 검사를 통과했어요.
-- 마우스오버 툴팁과 표 보기를 제공해요.
-- 휴대폰 화면(375px)에서도 가로로 넘치지 않는 것을 확인했어요.
+**사이트 디자인 맞춤과 끼워 넣기 (`report_html.py`)**
+
+- **디자인 값:** didimdol.cloud의 Tailwind 설정에서 가져왔어요.
+
+  | 모드 | 쓰는 값 |
+  |---|---|
+  | 라이트 | 글자 `#153d31`(didim-ink), 대표색 `#007e5c`(didim-green), 보조 글자 `#687b74`, 선 `#dce8e0`, 배경 `#e4f3eb`(mint)·`#eff7f2`(mist), 숲 상자 `#123e30`(forest) |
+  | 다크 | gray-900·800·700 배경과 emerald-400(`#00d492`) |
+  | 공통 | 글꼴은 사이트의 Pretendard를 그대로 써요. 모서리는 카드 20px, 요약 24px로 사이트와 같아요 |
+
+- **`render_fragment()`:** 사이트 페이지에 그대로 끼워 넣는 조각이에요(`<style>` + `<section class="dd-report">` + `<script>`).
+  - 모든 CSS가 `.dd-report` 아래로 범위가 한정돼 있어서 사이트 스타일과 충돌하지 않아요.
+  - 다크 모드는 사이트와 같은 방식(`<html class="dark">` 또는 `data-theme="dark"`)을 따라가요.
+  - 한 페이지에 여러 개를 넣어도 툴팁이 서로 섞이지 않아요.
+- **`render()`:** 혼자 열어 보는 전체 문서예요. 시스템 다크 모드를 따르고, 외부 리소스는 없어요.
+- **API:** `POST /v1/report`에서 `"format": "html_fragment"`로 요청하면 조각을, `"html"`로 요청하면 전체 문서를 받아요.
+- **확인 결과:** 실제 사이트 페이지(다크)에 조각을 끼워 넣어 보았고, 라이트·다크 데스크톱과 휴대폰 화면(375px)도 확인했어요. 가로로 넘치는 요소는 없었어요.
 - 헤더 문구: "남과 견주지 않고, 내 목표와 지난주의 나를 기준으로 봐요."
 
 ---
@@ -614,7 +630,68 @@ uvicorn didimdol_ai.api:app --host 127.0.0.1 --port 8000     # 문서: http://12
 | POST | `/v1/recommendations` | 프로필 + 카드 → 추천 | - |
 | POST | `/v1/judge` | 카드 1장 → 목표 직무 요구 항목별 근거 판정 | ✓ |
 | POST | `/v1/cards/draft` | 파일 업로드 → 카드 초안 (PDF·HWP·HWPX·DOCX·TXT·이미지, 10MB). 스캔본과 이미지는 OCR을 거치고 응답에 `ocr_used`가 표시돼요 | ✓ |
-| POST | `/v1/report` | 이력 → 주간·월간 리포트 (`format: json\|html`, `with_feedback`, `coach_tone`) | `with_feedback`일 때만 |
+| POST | `/v1/report` | 이력 → 주간·월간 리포트. `format`은 `json`, `html`(전체 문서), `html_fragment`(사이트에 끼워 넣는 조각) 중 하나예요. `with_feedback`, `coach_tone` 옵션이 있어요 | `with_feedback`일 때만 |
+| POST | `/v1/forms/self-status` | 사용자 상태 → 자기상태표 입력 화면 조각 (아래 설명) | - |
+
+---
+
+## 자기상태표 입력 화면 (`input_html.py`)
+
+사이트의 자기상태표 페이지(`/jobfit/profile`)에 붙이는 입력 화면이에요. 기존 페이지에는 메모 4칸(관심 있는 일, 해 본 경험, 더 알아볼 것, 다음 한 칸)과 포트폴리오 업로드만 있어요. 분석 엔진이 필요로 하는 구조화된 입력을 같은 디자인으로 받기 위해 만들었어요.
+
+```bash
+python -c "from didimdol_ai.input_html import render_input, demo_config; open('reports/demo_input.html','w',encoding='utf-8').write(render_input(demo_config()))"
+```
+
+**탭 세 개**
+
+| 탭 | 받는 것 | 보내는 데이터 형식 |
+|---|---|---|
+| **이번 주 체크인** (2분) | 6축 자기평가, 지난주 할 일 결과, 이번 주에 쓴 시간, 컨디션(선택) | `CheckinIn` (`/v1/report` history의 checkin) |
+| **경험 카드** | 직접 쓰기, 또는 파일·사진을 올려 AI 초안을 받아 확인 후 저장 | `CardIn` / 파일(`FormData`) |
+| **목표·기본 정보** | 목표 직무와 남은 주, 학적 상태, 관심 분야, 주당 시간, 코치 톤 | `{profile: ProfileIn, coach_tone, goal}` |
+
+각 탭의 세부 동작이에요.
+- **6축 자기평가:** 지난주 값이 미리 채워져 있어요. 단계(1~5)를 고르면 그 단계의 설명(`axes.json` 앵커)이 바로 아래에 보여요. 바뀐 축은 "지난주 3 → 4"처럼 표시돼요.
+- **지난주 할 일:** "잠시 멈췄어요"를 고르면 이유를 묻는 선택지가 열려요(시간 부족, 상황, 방법을 모름, 마음이 안 남). 2주 이상 멈춘 일은 다음 주에 "작은 첫걸음"으로 쪼개져 제안돼요.
+- **컨디션:** "나만 볼 수 있고, 진로 점수에는 쓰이지 않아요"라고 안내해요.
+- **경험 카드:** 제목과 "내가 한 행동"(20자 이상)이 필수예요. 글자 수 표시는 사이트와 같은 방식이에요(60/1000/500자).
+  - 파일 초안은 원문 구절과 보충 질문을 함께 보여 줘요. "고쳐서 저장"을 누르면 입력 칸에 채워져요.
+
+**디자인과 접근성**
+
+- 리포트와 같은 사이트 디자인 값을 써요. CSS는 모두 `.dd-input` 아래로 범위가 한정돼 있고, 다크 모드는 사이트의 `.dark`를 따라가요.
+  - 실제 사이트 페이지(다크)에 끼워 넣어 보니 Tailwind 기본 스타일과 부딪히는 곳이 없었어요.
+- 선택지는 진짜 라디오·체크박스를 버튼 모양으로 꾸민 거라 키보드로 고를 수 있어요. 탭은 ←/→ 키로 옮겨 가요.
+- 모든 묶음에는 `fieldset`/`legend`나 `label`이 붙어 있어요. 저장 결과는 화면 읽기 프로그램이 읽어 주는 영역(`role=status`)에 표시돼요.
+- 휴대폰 화면에서는 버튼이 가로로 꽉 차고, 6축 단계 버튼은 5칸을 유지해요.
+
+**G7에 붙이는 방법**
+
+1. **G7 서버가 조각을 받아 와요.** G7 서버는 사용자 DB에서 상태를 모아 `POST /v1/forms/self-status`를 불러요. 이때 `X-Didimdol-Key` 헤더가 필요해요. 키가 서버에만 있으니 브라우저로 새지 않아요.
+   ```json
+   {"week": "W9", "profile": {...}, "coach_tone": "balanced", "goal": {"uid": "kier:262563", "role_index": 13, "weeks_left": 2},
+    "last_ratings": {"domain": 3, ...}, "milestones": [{"milestone_id": "...", "title": "...", "requirement_id": "..."}],
+    "cards": [...], "endpoints": {"checkin": "/api/modules/sirsoft-jobfit/me/jobfit/checkins", "card": "...", "profile": "...", "draft": "..."}}
+   ```
+   - `milestones`에는 지난주 리포트의 `next_actions`를 넣으면 돼요.
+   - 목표 직무 선택지는 이 서버가 공고 DB에서 채워요. 학부생이 지원할 수 있고 지금 접수 중인 직무만 넣어요.
+2. **페이지에 넣어요.** `innerHTML`로 넣으면 스크립트가 실행되지 않아요. 그래서 아래처럼 스크립트만 다시 만들어 붙여야 해요.
+   ```js
+   function mountDidimdol(el, html) {
+     el.innerHTML = html;
+     el.querySelectorAll('script:not([type="application/json"])').forEach(old => {
+       const s = document.createElement('script'); s.textContent = old.textContent; old.replaceWith(s);
+     });
+   }
+   ```
+3. **저장을 받아요.** 저장 버튼을 누를 때마다 `didimdol:save` 이벤트가 나가요(`detail = {type, payload}`).
+   - **이벤트로 받기:** G7이 이벤트를 받아 처리하고 `event.preventDefault()`를 부르면, 조각은 직접 보내지 않아요.
+   - **주소로 받기:** 위의 `endpoints`에 저장 주소를 주면, 조각이 그 주소로 같은 출처 요청을 보내요. Laravel의 `XSRF-TOKEN` 쿠키를 `X-XSRF-TOKEN` 헤더로 함께 보내요.
+   - **파일 초안:** G7이 직접 처리했다면, 받은 응답을 `section.didimdolShowDrafts(response)`로 넘겨 화면에 그려요.
+4. **저장한 뒤 분석해요.** G7 서버가 체크인과 카드를 DB에 저장한 다음, `/v1/report`(`format: "html_fragment"`)로 리포트를 받아 같은 방식으로 보여 줘요.
+
+- 사이트 확인 결과, 보안 정책(CSP)이 없어서 인라인 스크립트가 실행돼요. 나중에 CSP를 켜면 nonce를 붙이거나 스크립트를 별도 파일로 빼야 해요.
 
 ---
 
@@ -635,7 +712,7 @@ python scripts/daily.py --pages 2          # --no-llm: 수집만
 ## 검증과 테스트
 
 ```bash
-python -m unittest            # 122개, 약 1초. 가짜 Claude 클라이언트를 써서 실제 API를 부르지 않아요
+python -m unittest            # 129개, 약 1초. 가짜 Claude 클라이언트를 써서 실제 API를 부르지 않아요
 python -m didimdol_ai.simulate
 ```
 

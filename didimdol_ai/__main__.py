@@ -24,7 +24,7 @@ def load_profile(path: str) -> UserProfile:
 
 
 def load_cards(path: str) -> list[ExperienceCard]:
-    return [ExperienceCard(**c) for c in json.loads(Path(path).read_text(encoding="utf-8"))["cards"]]
+    return [ExperienceCard.from_dict(c) for c in json.loads(Path(path).read_text(encoding="utf-8"))["cards"]]
 
 
 def judge_roles(recs, roles, cards):

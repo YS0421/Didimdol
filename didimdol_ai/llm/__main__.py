@@ -57,7 +57,7 @@ def run_judge(args) -> int:
     ext = Extraction(stored["uid"], stored["model"], stored["roles"])
     role = ext.roles[args.role]
     reqs = ext.to_requirements(args.role)
-    cards = [ExperienceCard(**c) for c in json.loads(Path(args.cards).read_text(encoding="utf-8"))["cards"]]
+    cards = [ExperienceCard.from_dict(c) for c in json.loads(Path(args.cards).read_text(encoding="utf-8"))["cards"]]
     ratings = json.loads(args.ratings) if args.ratings else {}
     labels = {r.id: r.label for r in reqs}
 

@@ -165,6 +165,28 @@ class GoalIn(BaseModel):
     weekly_hours: float = Field(gt=0)
 
 
+class MilestoneRef(BaseModel):
+    milestone_id: str
+    title: str
+    requirement_id: Optional[str] = None
+
+
+class InputFormIn(BaseModel):
+    """자기상태표 입력 화면 조각 요청. 사용자 상태는 G7이 보낸다."""
+
+    week: str
+    profile: dict = {}
+    coach_tone: Literal["praise", "balanced", "direct"] = "balanced"
+    goal: Optional[dict] = None  # {uid, role_index, weeks_left}
+    last_ratings: dict[str, int] = {}
+    milestones: list[MilestoneRef] = []  # 지난주에 제안된 할 일 (리포트의 next_actions)
+    cards: list[CardIn] = []
+    endpoints: dict[str, str] = {}  # {"checkin": "/api/...", "card": ..., "profile": ..., "draft": ...} G7 저장 경로
+    start_tab: Literal["checkin", "cards", "profile"] = "checkin"
+    missed_previous_week: bool = False
+    include_closed_goals: bool = False
+
+
 class ReportIn(BaseModel):
     goal: GoalIn
     history: list[WeekIn] = Field(min_length=1)
@@ -172,7 +194,7 @@ class ReportIn(BaseModel):
     style_share: dict[str, float] = {}
     mentoring: list[MentoringIn] = []
     kind: Literal["weekly", "monthly"] = "weekly"
-    format: Literal["json", "html"] = "json"
+    format: Literal["json", "html", "html_fragment"] = "json"  # html_fragment: 사이트 페이지에 끼워 넣는 조각
     with_feedback: bool = False
     coach_tone: Literal["praise", "balanced", "direct"] = "balanced"
 
@@ -256,6 +278,32 @@ def ncs_detail(code: str) -> dict:
     return {"code": code, **d}
 
 
+@app.post("/v1/forms/self-status", dependencies=[Depends(require_key)])
+def self_status_form(body: InputFormIn) -> HTMLResponse:
+    """자기상태표 입력 화면 조각. 목표 직무 선택지는 공고 DB에서 채운다 (학부생 지원 가능 + 접수 중)."""
+    from .input_html import build_config, render_input_fragment
+    from .recommend import candidates_from_store
+
+    options = []
+    if DB_PATH.exists():
+        s = store()
+        try:
+            roles = candidates_from_store(s, load_institutes())
+        finally:
+            s.close()
+        for r in roles:
+            keep = (r.undergrad_eligible is not False) and (body.include_closed_goals or not r.is_closed)
+            chosen = body.goal and body.goal.get("uid") == r.uid and body.goal.get("role_index") == r.role_index
+            if keep or chosen:
+                options.append({"uid": r.uid, "role_index": r.role_index,
+                                "label": f"{r.institute_name} · {r.role_name}" + (f" (마감 {r.apply_end_on})" if r.apply_end_on else "")})
+    config = build_config(
+        body.week, {**body.profile, "coach_tone": body.coach_tone}, body.goal, options, body.last_ratings,
+        [m.model_dump() for m in body.milestones], [c.model_dump() for c in body.cards], body.endpoints,
+        body.start_tab, body.missed_previous_week)
+    return HTMLResponse(render_input_fragment(config))
+
+
 @app.post("/v1/recommendations", dependencies=[Depends(require_key)])
 def recommendations(body: RecommendIn) -> dict:
     from .recommend import UserProfile, candidates_from_store, recommend
@@ -304,7 +352,7 @@ async def cards_draft(file: UploadFile = File(...)) -> dict:
 @app.post("/v1/report", dependencies=[Depends(require_key)])
 def report(body: ReportIn):
     from .metrics import MentoringRecord, ReportInputs, WeekState, build_report
-    from .report_html import render
+    from .report_html import render, render_fragment
 
     role, reqs = _role(body.goal.uid, body.goal.role_index)
     goal = Goal(body.goal.uid, body.goal.title or role["role_name"], reqs, body.goal.weeks_left, body.goal.weekly_hours)
@@ -332,4 +380,6 @@ def report(body: ReportIn):
 
     if body.format == "html":
         return HTMLResponse(render(data, feedback, healing))
+    if body.format == "html_fragment":
+        return HTMLResponse(render_fragment(data, feedback, healing))
     return data

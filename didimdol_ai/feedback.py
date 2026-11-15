@@ -11,6 +11,7 @@ from dataclasses import dataclass, field
 from typing import Literal, Optional
 
 from .config import axis_names, load_planning
+from .text import fix_josa
 from .models import Checkin
 from .scoring import AxisScore, GapPlan
 
@@ -58,7 +59,7 @@ class WeeklyFeedback:
 def _item(kind: Kind, reason: str, axis: Optional[str] = None, **ctx) -> FeedbackItem:
     names = axis_names()
     fmt = {"axis": names.get(axis, axis or ""), **ctx}
-    return FeedbackItem(kind, reason, TEMPLATES[reason].format(**fmt), axis, dict(ctx))
+    return FeedbackItem(kind, reason, fix_josa(TEMPLATES[reason].format(**fmt)), axis, dict(ctx))
 
 
 def build_weekly_feedback(

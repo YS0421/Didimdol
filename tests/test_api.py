@@ -122,6 +122,9 @@ class ApiTest(unittest.TestCase):
         html = self.c.post("/v1/report", json=self._report_body(format="html"), headers=self.h)
         self.assertIn("text/html", html.headers["content-type"])
         self.assertIn("육각형 능력치", html.text)
+        frag = self.c.post("/v1/report", json=self._report_body(format="html_fragment"), headers=self.h)
+        self.assertTrue(frag.text.startswith("<style>"))  # 사이트에 끼워 넣는 조각 (html/body 없음)
+        self.assertNotIn("<html", frag.text)
 
     def test_report_with_feedback(self):
         data = self.c.post("/v1/report", json=self._report_body(with_feedback=True, coach_tone="direct"),
@@ -142,6 +145,16 @@ class ApiTest(unittest.TestCase):
             self.assertEqual(self.c.get(f"/v1/ncs/{code}", headers=self.h).json()["code"], code)
         self.assertEqual(self.c.get("/v1/ncs/search", params={"q": "a"}, headers=self.h).status_code, 422)
         self.assertEqual(self.c.get("/v1/ncs/00000000", headers=self.h).status_code, 404)
+
+    def test_self_status_form(self):
+        body = {"week": "W2", "profile": {"status": "expected"}, "goal": {"uid": "kiom:1", "role_index": 0, "weeks_left": 6},
+                "milestones": [{"milestone_id": "m1", "title": "실험 결과 분석 연습"}], "cards": [CARD],
+                "endpoints": {"checkin": "/api/modules/sirsoft-jobfit/me/jobfit/checkins"}}
+        r = self.c.post("/v1/forms/self-status", json=body, headers=self.h)
+        self.assertEqual(r.status_code, 200)
+        self.assertIn('class="dd-input"', r.text)
+        self.assertIn("세포 실험 연구 보조", r.text)  # 목표 직무 선택지를 공고 DB에서 채움
+        self.assertEqual(self.c.post("/v1/forms/self-status", json=body).status_code, 401)
 
     def test_card_draft_upload(self):
         text = "학부연구생 활동: 세포 배양과 MTT assay를 수행하고 결과를 정리했다. " * 3
