@@ -79,6 +79,7 @@ class Goal:
     requirements: list[Requirement]
     weeks_left: int
     weekly_hours: float
+    means: Optional[str] = None  # 수단으로 고정한 인턴 직무명. 목표 문장과 따로 보여 준다.
 
 
 @dataclass

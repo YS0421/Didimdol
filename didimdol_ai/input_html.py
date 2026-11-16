@@ -1,9 +1,9 @@
 """자기상태표 입력 화면: 사이트(didimdol.cloud) 자기상태표 페이지에 그대로 끼워 넣는 조각.
 
-세 탭으로 구성한다.
-1) 이번 주 체크인 — 6축 자기평가(단계 설명이 바로 보임, 지난주 값 미리 채움), 지난주 할 일 결과, 쓴 시간, 컨디션
+세 탭으로 구성한다. 처음 열리는 탭은 목표·기본 정보다.
+1) 목표·기본 정보 — 학적 상태, 관심 분야, 주당 시간, 코치 톤, 자유 목표 문장. 관련 인턴은 있을 때만 수단으로 고정
 2) 경험 카드     — 직접 쓰기 / 파일·사진 올려 AI 초안 받기(확인 후 저장)
-3) 목표·기본 정보 — 학적 상태, 관심 분야, 주당 시간, 코치 톤, 목표 직무
+3) 이번 주 체크인 — 6축 자기평가(단계 설명이 바로 보임, 지난주 값 미리 채움), 지난주 할 일 결과, 쓴 시간, 컨디션
 
 저장 방식 (API 키가 브라우저로 나가지 않게):
 - 저장할 때마다 이 조각이 `didimdol:save` 이벤트를 보낸다 (detail = {type, payload}). payload는 디딤돌 AI API 요청 형식과 같다.
@@ -178,7 +178,7 @@ function Widget(root){
  function setStatus(s,msg,err){if(!s)return;s.textContent=msg;s.className='dd-status'+(err?' err':'');}
 
  // ── 탭
- var tabs=[['checkin','이번 주 체크인','2분'],['cards','경험 카드',''],['profile','목표·기본 정보','']];
+ var tabs=[['profile','목표·기본 정보',''],['cards','경험 카드',''],['checkin','이번 주 체크인','2분']];
  var tabBar=el('div',{class:'dd-tabs',role:'tablist','aria-label':'자기상태표 입력'});
  var panels={};
  tabs.forEach(function(t,i){
@@ -267,7 +267,7 @@ function Widget(root){
    S.cards.forEach(function(c){list.appendChild(el('li',{},[el('div',{},[el('b',{text:c.title}),el('small',{text:[c.kind,c.period].filter(Boolean).join(' · ')})]),
     el('button',{type:'button',class:'dd-btn small',text:'고치기',onclick:function(){fill(c);form.scrollIntoView({behavior:'smooth',block:'start'});}})]));});}
   p.appendChild(el('section',{class:'dd-card'},[el('h3',{class:'dd-card-title',text:'내 경험 카드'}),
-   el('p',{class:'dd-card-desc',text:'카드에 적은 행동이 공고 요구 항목의 근거가 돼요.'}),list]));
+   el('p',{class:'dd-card-desc',text:'카드에 적은 행동이 목표 요구 항목의 근거가 돼요.'}),list]));
 
   // 파일로 초안
   var fileIn=el('input',{type:'file',class:'dd-sr',id:name('file'),accept:'.pdf,.hwp,.hwpx,.docx,.txt,.png,.jpg,.jpeg,.webp'});
@@ -349,44 +349,78 @@ function Widget(root){
   renderList();
  })();
 
- // ── 3) 목표·기본 정보
+ // ── 1) 목표·기본 정보
  (function(){
   var p=panels.profile;var pr=S.profile;
   var st=el('div',{class:'dd-choices'});
   Object.keys(C.status).forEach(function(k){st.appendChild(choice('radio',name('status'),k,C.status[k],pr.status===k,function(){pr.status=k;}));});
   var fl=el('div',{class:'dd-choices'});
+  var initialFields=(pr.interest_fields||[]).slice().sort().join(',');
+  function fieldsDirty(){return (pr.interest_fields||[]).slice().sort().join(',')!==initialFields;}
+  function syncPins(){
+   var dirty=fieldsDirty();
+   root.querySelectorAll('input[name="'+name('pin')+'"]').forEach(function(r){
+    if(!r.value){if(dirty)r.checked=true;return;}
+    r.disabled=dirty;
+    if(!dirty&&r.value===pinned)r.checked=true;
+   });
+   var note=root.querySelector('#'+name('means-note'));
+   if(note)note.hidden=!dirty;
+   if(dirty)root.dispatchEvent(new CustomEvent('didimdol:fields',{bubbles:true,detail:{interest_fields:(pr.interest_fields||[]).slice()}}));
+  }
   Object.keys(C.fields).forEach(function(k){fl.appendChild(choice('checkbox',name('fields'),k,C.fields[k],(pr.interest_fields||[]).indexOf(k)>=0,function(e){
-   var s=new Set(pr.interest_fields||[]);if(e.target.checked)s.add(k);else s.delete(k);pr.interest_fields=Array.from(s);}));});
+   var s=new Set(pr.interest_fields||[]);if(e.target.checked)s.add(k);else s.delete(k);pr.interest_fields=Array.from(s);syncPins();}));});
   var hv=el('span',{class:'dd-range-val'});
   var hr=el('input',{type:'range',id:name('weekly'),min:'1',max:'20',step:'1',value:String(pr.weekly_hours||6),
    'aria-describedby':name('weekly-v'),oninput:function(){pr.weekly_hours=+hr.value;hv.textContent='한 주 '+hr.value+'시간';}});
   hv.id=name('weekly-v');hv.textContent='한 주 '+hr.value+'시간';
   var tone=el('div',{class:'dd-choices dd-tone'});
   Object.keys(C.tones).forEach(function(k){tone.appendChild(choice('radio',name('tone'),k,C.tones[k][0],pr.coach_tone===k,function(){pr.coach_tone=k;},[el('small',{text:C.tones[k][1]})]));});
-  var gs=el('select',{id:name('goal')},[el('option',{value:'',text:'목표 직무를 골라 주세요'})]);
-  (C.goal_options||[]).forEach(function(o,i){var v=o.uid+'#'+o.role_index;gs.appendChild(el('option',{value:v,text:o.label,
-   selected:S.goal&&S.goal.uid===o.uid&&S.goal.role_index===o.role_index}));});
-  var wk=el('input',{type:'number',id:name('weeks'),min:'1',max:'52',value:String((S.goal&&S.goal.weeks_left)||8)});
+  var titleEl=el('input',{type:'text',id:name('goal-title'),maxlength:'80',value:(S.goal&&S.goal.title)||'',
+   placeholder:'예: 세포 실험을 스스로 설계할 수 있게 되기'});
+  var wk=el('input',{type:'number',id:name('goal-weeks'),min:'1',max:'52',value:String((S.goal&&S.goal.weeks_left)||8)});
+  var pinned=S.goal&&S.goal.uid?S.goal.uid+'#'+S.goal.role_index:'';
+  var pinListed=(C.goal_options||[]).some(function(o){return pinned&&o.uid+'#'+o.role_index===pinned;});
+  var pins=el('div',{class:'dd-choices'});
+  pins.appendChild(choice('radio',name('pin'),'', '고정하지 않음', !pinListed, null));
+  (C.goal_options||[]).forEach(function(o){var v=o.uid+'#'+o.role_index;
+   pins.appendChild(choice('radio',name('pin'),v,o.label,pinned===v,null));});
   var status=el('span',{class:'dd-status',role:'status','aria-live':'polite'});
-  p.appendChild(el('section',{class:'dd-card'},[el('h3',{class:'dd-card-title',text:'목표'}),
-   el('p',{class:'dd-card-desc',text:'목표 직무가 요구하는 수준이 육각형의 목표선이 돼요. 언제든 바꿀 수 있어요.'}),
-   el('div',{class:'dd-grid2'},[field('목표 직무','수집한 출연연 인턴 공고에서 골라요.',gs,name('goal')),
-    field('목표 기한까지 남은 주','',wk,name('weeks'))])]));
+  function saveProfile(){
+   if(!titleEl.value.trim()){setStatus(status,'목표를 한 줄로 적어 주세요.',true);titleEl.focus();return;}
+   if(!(pr.interest_fields||[]).length){setStatus(status,'관심 분야를 하나 이상 골라 주세요.',true);return;}
+   var g={title:titleEl.value.trim(),weeks_left:+wk.value||8,weekly_hours:pr.weekly_hours,fields:(pr.interest_fields||[]).slice()};
+   var picked=(root.querySelector('input[name="'+name('pin')+'"]:checked')||{}).value||'';
+   if(picked&&!fieldsDirty()){var parts=picked.split('#');g.uid=parts[0];g.role_index=+parts[1];}
+   save('profile',{profile:{status:pr.status,interest_fields:pr.interest_fields,weekly_hours:pr.weekly_hours,regions:pr.regions||[],
+    style_share:pr.style_share||{},include_admin:!!pr.include_admin},coach_tone:pr.coach_tone,goal:g},status);
+  }
+  var actions=el('div',{class:'dd-actions'},[status,el('button',{type:'button',class:'dd-btn primary',text:'저장',onclick:saveProfile})]);
   p.appendChild(el('section',{class:'dd-card'},[el('h3',{class:'dd-card-title',text:'기본 정보'}),
    el('p',{class:'dd-card-desc',text:'공고 추천과 할 일의 양을 맞추는 데 써요.'}),
    el('fieldset',{class:'dd-row'},[el('legend',{class:'dd-label',text:'지금 학적 상태'}),st]),
-   el('fieldset',{class:'dd-row'},[el('legend',{class:'dd-label',text:'관심 연구 분야'}),el('span',{class:'dd-hint',text:'여러 개 골라도 돼요.'}),fl]),
    el('div',{class:'dd-row'},[el('label',{class:'dd-label',for:name('weekly'),text:'한 주에 준비에 쓸 수 있는 시간'}),hr,hv]),
-   el('fieldset',{class:'dd-row'},[el('legend',{class:'dd-label',text:'코치 톤'}),el('span',{class:'dd-hint',text:'피드백 말투예요. 컨디션이 낮은 주에는 톤과 상관없이 다그치지 않아요.'}),tone]),
-   el('div',{class:'dd-actions'},[status,el('button',{type:'button',class:'dd-btn primary',text:'저장',onclick:function(){
-    var g=null;if(gs.value){var parts=gs.value.split('#');g={uid:parts[0],role_index:+parts[1],weeks_left:+wk.value||8,weekly_hours:pr.weekly_hours};}
-    save('profile',{profile:{status:pr.status,interest_fields:pr.interest_fields,weekly_hours:pr.weekly_hours,regions:pr.regions||[],
-     style_share:pr.style_share||{},include_admin:!!pr.include_admin},coach_tone:pr.coach_tone,goal:g},status);}})])]));
+   el('fieldset',{class:'dd-row'},[el('legend',{class:'dd-label',text:'코치 톤'}),el('span',{class:'dd-hint',text:'피드백 말투예요. 컨디션이 낮은 주에는 톤과 상관없이 다그치지 않아요.'}),tone])]));
+  p.appendChild(el('section',{class:'dd-card'},[el('h3',{class:'dd-card-title',text:'직무·분야'}),
+   el('p',{class:'dd-card-desc',text:'이 선택이 추천과 육각형 목표선의 기준이 돼요.'}),
+   el('fieldset',{class:'dd-row'},[el('legend',{class:'dd-label',text:'관심 연구 분야'}),el('span',{class:'dd-hint',text:'여러 개 골라도 돼요.'}),fl])]));
+  var goalCard=el('section',{class:'dd-card'},[el('h3',{class:'dd-card-title',text:'목표'}),
+   el('p',{class:'dd-card-desc',text:'인턴 공고가 아니어도 돼요. 이루고 싶은 것을 한 줄로 적어 주세요.'}),
+   field('목표','',titleEl,name('goal-title')),
+   field('목표 기한까지 남은 주','',wk,name('goal-weeks'))]);
+  p.appendChild(goalCard);
+  if((C.goal_options||[]).length){
+   p.appendChild(el('section',{class:'dd-card',id:name('means')},[el('h3',{class:'dd-card-title',text:'관련 공고'}),
+    el('p',{class:'dd-card-desc',text:'이 분야와 맞는 인턴이 있어요. 원할 때만 수단으로 고정해요. 고정하지 않아도 목표선은 이 분야의 공통 요구로 그려요.'}),
+    el('fieldset',{class:'dd-row'},[el('legend',{class:'dd-label',text:'수단으로 고정'}),pins]),
+    el('p',{class:'dd-note',id:name('means-note'),hidden:true,text:'분야가 바뀌었어요. 이전 공고는 고정하지 않아요. 저장한 뒤 관련 공고를 다시 불러와요.'}),
+    actions]));
+  }else goalCard.appendChild(actions);
  })();
 
  var body=root.querySelector('.dd-body');
  body.appendChild(tabBar);tabs.forEach(function(t){body.appendChild(panels[t[0]]);});
- select(C.start_tab&&panels[C.start_tab]?C.start_tab:'checkin');
+ select(C.start_tab&&panels[C.start_tab]?C.start_tab:'profile');
 }
 document.querySelectorAll('.dd-input:not([data-dd-ready])').forEach(function(r){r.setAttribute('data-dd-ready','1');try{Widget(r);}catch(e){console.error('didimdol input',e);}});
 })();
@@ -415,7 +449,7 @@ def build_config(
     milestones: Optional[list[dict]] = None,
     cards: Optional[list[dict]] = None,
     endpoints: Optional[dict] = None,
-    start_tab: str = "checkin",
+    start_tab: str = "profile",
     missed_previous_week: bool = False,
 ) -> dict:
     axes = [{"id": a["id"], "name": a["name"], "anchors": a["anchors"]} for a in load_axes()["axes"]]
@@ -448,7 +482,7 @@ def render_input(config: dict) -> str:
             f"<body>{render_input_fragment(config)}</body></html>")
 
 
-def demo_config(start_tab: str = "checkin") -> dict:
+def demo_config(start_tab: str = "profile") -> dict:
     """예시 데이터셋(p03)을 넣은 미리보기용 설정."""
     from pathlib import Path
 
@@ -462,9 +496,10 @@ def demo_config(start_tab: str = "checkin") -> dict:
         report = json.loads((root / "report.json").read_text(encoding="utf-8"))
         ms = [{"milestone_id": f"m-{a['requirement_id']}", "title": a["title"], "requirement_id": a["requirement_id"]}
               for a in report["next_actions"][:2]]
-        goal = {"uid": req["goal"]["uid"], "role_index": req["goal"]["role_index"], "weeks_left": req["goal"]["weeks_left"]}
-        options = [{"uid": goal["uid"], "role_index": goal["role_index"], "label": f"한국에너지기술연구원 · {report['goal']['title']}"}]
         profile = {**prof["profile"], "coach_tone": prof.get("coach_tone", "balanced")}
+        goal = {"title": report["goal"]["title"], "fields": profile.get("interest_fields") or [],
+                "uid": req["goal"]["uid"], "role_index": req["goal"]["role_index"], "weeks_left": req["goal"]["weeks_left"]}
+        options = [{"uid": goal["uid"], "role_index": goal["role_index"], "label": f"한국에너지기술연구원 · {report['goal']['title']}"}]
     except (OSError, KeyError, ValueError):
         prof, cards, last, ms, goal, options, profile = {}, [], {}, [], None, [], {}
     return build_config("W9", profile, goal, options, last, ms, cards, start_tab=start_tab)

@@ -33,6 +33,10 @@ class InputHtmlTest(unittest.TestCase):
         data = re.search(r'<script type="application/json">(.*?)</script>', frag, re.S).group(1)
         self.assertEqual(json.loads(data)["week"], "W3")
         self.assertIn("didimdol:save", frag)  # G7이 받는 저장 이벤트
+        self.assertEqual(self.cfg["start_tab"], "profile")
+        self.assertIn("직무·분야", frag)
+        self.assertIn("title:titleEl.value.trim()", frag)
+        self.assertIn("고정하지 않음", frag)
 
     def test_config_cannot_break_out_of_script(self):
         cfg = build_config("W1", cards=[{"id": "x", "kind": "수업", "title": "</script><script>alert(1)</script>",

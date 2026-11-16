@@ -16,7 +16,7 @@ from typing import Literal, Optional
 
 from fastapi import Depends, FastAPI, File, Header, HTTPException, UploadFile
 from fastapi.responses import HTMLResponse
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 from .collector.runner import load_institutes
 from .collector.store import Store
@@ -115,9 +115,17 @@ class RecommendIn(BaseModel):
 
 
 class JudgeIn(BaseModel):
-    uid: str
+    uid: Optional[str] = None
     role_index: int = 0
+    fields: list[str] = []
+    title: Optional[str] = None
     card: CardIn
+
+    @model_validator(mode="after")
+    def need_anchor(self):
+        if (self.uid or "").strip() or self.fields:
+            return self
+        raise ValueError("공고를 고정했거나 분야를 골라 주세요.")
 
 
 class EvidenceIn(BaseModel):
@@ -158,11 +166,22 @@ class MentoringIn(BaseModel):
 
 
 class GoalIn(BaseModel):
-    uid: str
+    """uid가 있으면 그 인턴 직무를 수단으로 고정한 목표. 없으면 title과 fields로 분야 공통 요구를 쓴다."""
+
+    uid: Optional[str] = None
     role_index: int = 0
     title: Optional[str] = None
+    fields: list[str] = []
     weeks_left: int = Field(ge=0)
     weekly_hours: float = Field(gt=0)
+
+    @model_validator(mode="after")
+    def need_anchor(self):
+        if (self.uid or "").strip():
+            return self
+        if (self.title or "").strip() and self.fields:
+            return self
+        raise ValueError("목표 문장과 분야가 필요해요. 인턴을 수단으로 고정했다면 공고 번호가 필요해요.")
 
 
 class MilestoneRef(BaseModel):
@@ -177,12 +196,12 @@ class InputFormIn(BaseModel):
     week: str
     profile: dict = {}
     coach_tone: Literal["praise", "balanced", "direct"] = "balanced"
-    goal: Optional[dict] = None  # {uid, role_index, weeks_left}
+    goal: Optional[dict] = None  # {title, fields, weeks_left, weekly_hours, uid?, role_index?}
     last_ratings: dict[str, int] = {}
     milestones: list[MilestoneRef] = []  # 지난주에 제안된 할 일 (리포트의 next_actions)
     cards: list[CardIn] = []
     endpoints: dict[str, str] = {}  # {"checkin": "/api/...", "card": ..., "profile": ..., "draft": ...} G7 저장 경로
-    start_tab: Literal["checkin", "cards", "profile"] = "checkin"
+    start_tab: Literal["checkin", "cards", "profile"] = "profile"
     missed_previous_week: bool = False
     include_closed_goals: bool = False
 
@@ -216,6 +235,35 @@ def _role(uid: str, role_index: int) -> tuple[dict, list[Requirement]]:
         raise HTTPException(404, "직무 번호가 범위를 벗어났어요.")
     e = Extraction(ext["uid"], ext["model"], ext["roles"])
     return ext["roles"][role_index], e.to_requirements(role_index)
+
+
+def _field_roles():
+    """공고 DB가 있으면 직무 후보, 없으면 빈 목록. 분야 목표선은 DB 없이도 NCS로 만든다."""
+    from .recommend import candidates_from_store
+
+    if not DB_PATH.exists():
+        return []
+    s = store()
+    try:
+        return candidates_from_store(s, load_institutes())
+    finally:
+        s.close()
+
+
+def resolve_goal(goal: GoalIn) -> Goal:
+    """고정한 인턴이 있으면 그 요구 항목, 없으면 분야 공통 요구로 Goal을 만든다."""
+    from .goals import field_requirements
+
+    if (goal.uid or "").strip():
+        role, reqs = _role(goal.uid, goal.role_index)
+        title = (goal.title or "").strip() or role["role_name"]
+        means = role["role_name"] if (goal.title or "").strip() else None
+        return Goal(goal.uid, title, reqs, goal.weeks_left, goal.weekly_hours, means)
+    reqs = field_requirements(goal.fields, _field_roles(), goal.title or "")
+    if not reqs:
+        raise HTTPException(422, "이 분야의 공통 요구를 만들지 못했어요.")
+    return Goal("field:" + ",".join(sorted(goal.fields)), (goal.title or "").strip(), reqs,
+                goal.weeks_left, goal.weekly_hours)
 
 
 def _checkin(c: CheckinIn) -> Checkin:
@@ -280,23 +328,36 @@ def ncs_detail(code: str) -> dict:
 
 @app.post("/v1/forms/self-status", dependencies=[Depends(require_key)])
 def self_status_form(body: InputFormIn) -> HTMLResponse:
-    """자기상태표 입력 화면 조각. 목표 직무 선택지는 공고 DB에서 채운다 (학부생 지원 가능 + 접수 중)."""
-    from .input_html import build_config, render_input_fragment
-    from .recommend import candidates_from_store
+    """자기상태표 입력 화면 조각. 관련 인턴은 고른 분야가 있을 때만 추천하고, 고정은 선택이다."""
+    from datetime import date
 
+    from .input_html import build_config, render_input_fragment
+    from .recommend import UserProfile, _passes_filters, recommend
+
+    fields = (body.profile or {}).get("interest_fields") or []
     options = []
-    if DB_PATH.exists():
-        s = store()
-        try:
-            roles = candidates_from_store(s, load_institutes())
-        finally:
-            s.close()
-        for r in roles:
-            keep = (r.undergrad_eligible is not False) and (body.include_closed_goals or not r.is_closed)
-            chosen = body.goal and body.goal.get("uid") == r.uid and body.goal.get("role_index") == r.role_index
-            if keep or chosen:
-                options.append({"uid": r.uid, "role_index": r.role_index,
-                                "label": f"{r.institute_name} · {r.role_name}" + (f" (마감 {r.apply_end_on})" if r.apply_end_on else "")})
+    if fields and DB_PATH.exists():
+        profile = UserProfile(
+            status=(body.profile or {}).get("status") or "enrolled",
+            interest_fields=fields,
+            regions=(body.profile or {}).get("regions") or [],
+            style_share=(body.profile or {}).get("style_share") or {},
+            weekly_hours=(body.profile or {}).get("weekly_hours") or 8,
+            include_admin=bool((body.profile or {}).get("include_admin")),
+        )
+        roles = [r for r in _field_roles() if set(r.fields) & set(fields)]
+        recs = recommend(roles, profile, [c.to_model() for c in body.cards],
+                         top=5, include_closed=body.include_closed_goals)
+        options = [{"uid": r.uid, "role_index": r.role_index, "label": f"{r.institute} · {r.role_name}"} for r in recs]
+        pinned = body.goal or {}
+        pin_index = int(pinned.get("role_index") or 0)
+        if pinned.get("uid") and not any(o["uid"] == pinned["uid"] and o["role_index"] == pin_index for o in options):
+            cand = next((r for r in roles if r.uid == pinned["uid"] and r.role_index == pin_index), None)
+            # 지금 분야에 맞고 추천과 같은 조건일 때만 고정을 유지한다. 다른 분야 공고는 다시 넣지 않는다.
+            if (cand and set(cand.fields) & set(fields)
+                    and _passes_filters(cand, profile, body.include_closed_goals, date.today())):
+                options.insert(0, {"uid": cand.uid, "role_index": cand.role_index,
+                                   "label": f"{cand.institute_name} · {cand.role_name}"})
     config = build_config(
         body.week, {**body.profile, "coach_tone": body.coach_tone}, body.goal, options, body.last_ratings,
         [m.model_dump() for m in body.milestones], [c.model_dump() for c in body.cards], body.endpoints,
@@ -320,9 +381,15 @@ def recommendations(body: RecommendIn) -> dict:
 
 @app.post("/v1/judge", dependencies=[Depends(require_key)])
 def judge(body: JudgeIn) -> dict:
+    from .goals import field_requirements
     from .llm.evidence import judge_card
 
-    _, reqs = _role(body.uid, body.role_index)
+    if (body.uid or "").strip():
+        _, reqs = _role(body.uid, body.role_index)
+    else:
+        reqs = field_requirements(body.fields, _field_roles(), body.title or "")
+        if not reqs:
+            raise HTTPException(422, "이 분야의 공통 요구를 만들지 못했어요.")
     j = llm_errors(lambda: judge_card(llm(), body.card.to_model(), reqs))
     return {"card_id": j.card_id,
             "evidences": [{"requirement_id": e.requirement_id, "level": e.level, "card_id": e.card_id,
@@ -354,8 +421,7 @@ def report(body: ReportIn):
     from .metrics import MentoringRecord, ReportInputs, WeekState, build_report
     from .report_html import render, render_fragment
 
-    role, reqs = _role(body.goal.uid, body.goal.role_index)
-    goal = Goal(body.goal.uid, body.goal.title or role["role_name"], reqs, body.goal.weeks_left, body.goal.weekly_hours)
+    goal = resolve_goal(body.goal)
     history = [WeekState(_checkin(w.checkin), [Evidence(**e.model_dump()) for e in w.evidences])
                for w in body.history]
     inp = ReportInputs(goal, history, [c.to_model() for c in body.cards], body.style_share,

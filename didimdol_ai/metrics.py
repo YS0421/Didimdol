@@ -213,7 +213,7 @@ def build_report(inp: ReportInputs, kind: str = "weekly") -> dict:
              if m.consecutive_hold_weeks >= 2 and m.requirement_id}
     report = {
         "kind": kind,
-        "goal": {"title": goal.title, "weeks_left": goal.weeks_left},
+        "goal": {"title": goal.title, "weeks_left": goal.weeks_left, **({"means": goal.means} if goal.means else {})},
         "week": history[-1].checkin.week,
         "axis_names": names,
         "axes": {a: _axis_dict(s) for a, s in now.items()},

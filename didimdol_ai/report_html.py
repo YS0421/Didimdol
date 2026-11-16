@@ -55,6 +55,7 @@ max-width:1200px;margin:0 auto;-webkit-font-smoothing:antialiased}
 .dd-report .dd-eyebrow{font-size:13px;font-weight:700;color:var(--dd-accent);margin-bottom:6px}
 .dd-report .dd-hero h2{font-size:26px;line-height:1.35;font-weight:700;color:var(--dd-ink);letter-spacing:-0.6px}
 .dd-report .dd-lead{font-size:16px;color:var(--dd-text);margin-top:8px}
+.dd-report .dd-means{font-size:14px;color:var(--dd-muted);margin-top:4px}
 .dd-report .dd-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(120px,100%),1fr));gap:12px;margin-top:20px}
 .dd-report .dd-stat{background:var(--dd-stat);border-radius:16px;padding:14px 16px}
 .dd-report .dd-stat b{display:block;font-size:24px;font-weight:700;color:var(--dd-ink);font-variant-numeric:tabular-nums;line-height:1.3}
@@ -317,8 +318,10 @@ def _hero(report: dict, standalone_title: str) -> str:
     cov = report.get("requirement_coverage")
     if report["kind"] == "monthly" and cov and cov.get("covered_ratio") is not None:
         stats.append(f'<div class="dd-stat"><b>{_pct(cov["covered_ratio"])}</b><span>공고 요구 항목 충족</span></div>')
+    means = report["goal"].get("means")
+    means_html = f'<p class="dd-means">수단 · {_e(means)}</p>' if means else ""
     return (f'<header class="dd-hero"><p class="dd-eyebrow">{_e(standalone_title)} · {_e(report["week"])}</p>'
-            f'<h2>{_e(report["goal"]["title"])}</h2><p class="dd-lead">{_e(fix_josa(lead))}</p>'
+            f'<h2>{_e(report["goal"]["title"])}</h2>{means_html}<p class="dd-lead">{_e(fix_josa(lead))}</p>'
             f'<div class="dd-stats">{"".join(stats)}</div>'
             '<p class="dd-principle">남과 견주지 않고, 내 목표와 지난주의 나를 기준으로 봐요.</p></header>')
 

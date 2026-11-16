@@ -135,6 +135,37 @@ class ApiTest(unittest.TestCase):
     def test_report_validation(self):
         bad = self._report_body(history=[])
         self.assertEqual(self.c.post("/v1/report", json=bad, headers=self.h).status_code, 422)
+        no_anchor = {"goal": {"weeks_left": 4, "weekly_hours": 6},
+                     "history": [{"checkin": {"week": "W1", "self_ratings": {"research": 3}}}]}
+        self.assertEqual(self.c.post("/v1/report", json=no_anchor, headers=self.h).status_code, 422)
+
+    def test_report_pinned_means_and_field_goal(self):
+        pinned = self._report_body()
+        pinned["goal"]["title"] = "세포 실험을 직접 설계하기"
+        data = self.c.post("/v1/report", json=pinned, headers=self.h).json()
+        self.assertEqual(data["goal"]["title"], "세포 실험을 직접 설계하기")
+        self.assertEqual(data["goal"]["means"], "세포 실험 연구 보조")
+        html = self.c.post("/v1/report", json={**pinned, "format": "html"}, headers=self.h)
+        self.assertIn("수단 · 세포 실험 연구 보조", html.text)
+
+        saved = api.DB_PATH
+        api.DB_PATH = Path(self.tmp.name) / "missing.sqlite3"
+        try:
+            field_goal = {"goal": {"title": "세포 실험을 직접 설계하기", "fields": ["chem"],
+                                   "weeks_left": 8, "weekly_hours": 6},
+                          "history": [{"checkin": {"week": "W1", "self_ratings": {"research": 3}}, "evidences": []}]}
+            r = self.c.post("/v1/report", json=field_goal, headers=self.h)
+            self.assertEqual(r.status_code, 200, r.text)
+            body = r.json()
+            self.assertEqual(body["goal"]["title"], "세포 실험을 직접 설계하기")
+            self.assertNotIn("means", body["goal"])
+            self.assertTrue(any(a["target"] is not None for a in body["axes"].values()))
+            judged = self.c.post("/v1/judge", json={"fields": ["chem"], "title": "파일럿 실험 검증", "card": CARD},
+                                 headers=self.h)
+            self.assertEqual(judged.status_code, 200, judged.text)
+            self.assertTrue(judged.json()["evidences"])
+        finally:
+            api.DB_PATH = saved
 
     def test_ncs_endpoints(self):
         r = self.c.get("/v1/ncs/search", params={"q": "화학물질"}, headers=self.h)
@@ -153,7 +184,19 @@ class ApiTest(unittest.TestCase):
         r = self.c.post("/v1/forms/self-status", json=body, headers=self.h)
         self.assertEqual(r.status_code, 200)
         self.assertIn('class="dd-input"', r.text)
-        self.assertIn("세포 실험 연구 보조", r.text)  # 목표 직무 선택지를 공고 DB에서 채움
+        self.assertIn("목표를 한 줄로 적어 주세요.", r.text)
+        self.assertIn("title:titleEl.value.trim()", r.text)  # 공고를 고르지 않아도 목표 문장을 저장
+        self.assertNotIn("세포 실험 연구 보조", r.text)  # 분야가 없으면 인턴을 수단으로 보여 주지 않음
+        matched = {**body, "profile": {"status": "expected", "interest_fields": ["chem"]}}
+        shown = self.c.post("/v1/forms/self-status", json=matched, headers=self.h)
+        self.assertEqual(shown.status_code, 200)
+        self.assertIn("세포 실험 연구 보조", shown.text)
+        self.assertIn("고정하지 않음", shown.text)
+        self.assertIn("분야가 바뀌었어요", shown.text)
+        other = {**body, "profile": {"status": "expected", "interest_fields": ["energy"]},
+                 "goal": {"uid": "kiom:1", "role_index": 0, "title": "다른 분야", "weeks_left": 6}}
+        hidden = self.c.post("/v1/forms/self-status", json=other, headers=self.h)
+        self.assertNotIn("세포 실험 연구 보조", hidden.text)
         self.assertEqual(self.c.post("/v1/forms/self-status", json=body).status_code, 401)
 
     def test_card_draft_upload(self):
